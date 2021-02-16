@@ -56,7 +56,8 @@ li {
 }
 
 .container {
-  width: 1366px;
+  width: 1398px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -77,14 +78,19 @@ a {
 .btn--black {
   border: 2px solid #ffffff;
   color: #fff;
+  font-size: 20px;
+  padding: 10px 30px;
 }
 
-.btn--violet {
+.btn--violet--underline {
   color: #fff;
   background-color: #6742e1;
+}
+
+.btn--violet--underline {
   position: relative;
 }
-.btn--violet::before {
+.btn--violet--underline::before {
   position: absolute;
   bottom: -8px;
   left: 0;
@@ -94,18 +100,25 @@ a {
   height: 8px;
 }
 
+.btn--yellow {
+  font-family: "Museo Sans Cyrl 500";
+  background-color: #ffde02;
+}
+
 header {
   height: 80px;
   background-color: #000;
   color: #fff;
 }
 header .header__wrapper {
+  height: 100%;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
   flex-direction: row;
-  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 header .header__wrapper .nav {
   display: -moz-flex;
@@ -116,17 +129,20 @@ header .header__wrapper .nav {
 }
 header .header__wrapper .nav .nav__link {
   font-family: "Museo Sans Cyrl 500";
+  font-size: 20px;
   color: #fff;
 }
 
 .intro {
   background: url("../images/intro-bg.jpg");
   color: #fff;
+  height: 880px;
 }
 .intro .intro__wrapper {
   height: 880px;
 }
 .intro .intro__wrapper .intro__main {
+  height: 520px;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -138,60 +154,67 @@ header .header__wrapper .nav .nav__link {
 }
 .intro .intro__wrapper .intro__main .intro__content .intro__title {
   font-family: "Museo Sans Cyrl 700";
+  line-height: 54px;
+  letter-spacing: -2.2px;
   position: relative;
+  margin-top: 107px;
+  margin-bottom: 75px;
 }
 .intro .intro__wrapper .intro__main .intro__content .intro__title::before {
   position: absolute;
   width: 38px;
   height: 4px;
   content: "";
-  bottom: 0;
+  bottom: -40px;
   left: 0;
   background-color: white;
 }
 .intro .intro__wrapper .intro__main .intro__content .intro__subtitle {
   font-family: "Museo Sans Cyrl 500";
+  font-size: 26px;
+  letter-spacing: -1px;
 }
 .intro .intro__wrapper .intro__main .intro__personal {
   width: 50%;
 }
 .intro .intro__wrapper .intro__main .intro__personal .intro__subtitle {
   font-family: "Museo Sans Cyrl 300";
+  font-size: 20px;
+}
+.intro .intro__wrapper .intro__submain {
+  height: 360px;
 }
 .intro .intro__wrapper .intro__submain .intro__content .intro__text {
   font-family: "Museo Sans Cyrl 300";
+  font-size: 20px;
 }
 .intro .intro__wrapper .intro__submain .intro__content .intro__subcontent .inter__text {
   font-family: "Museo Sans Cyrl 900";
+  font-size: 60px;
 }
 
 .experience {
+  height: 463px;
   background-color: #6742e1;
 }
 .experience .experience__backtext {
   font-family: "Museo Sans Cyrl 900";
   color: #8766f3;
+  font-size: 150px;
 }
 .experience ul li {
   font-family: "Museo Sans Cyrl 300";
+  font-size: 20px;
   color: #fff;
 }
 
 .justification {
   background-color: #f5f5f5;
 }
-.justification .justification__wrapper {
-  column-width: 500px;
-  column-gap: 15px;
-  width: 100%;
-}
 .justification .justification__wrapper .justification__item {
-  width: 100%;
-  background-color: #fff;
-  position: relative;
-  transition: opacity 0.4s ease-in-out;
-  display: inline-block;
-  column-break-inside: avoid;
+  width: 50%;
+  float: left;
+  margin-bottom: 20px;
 }
 .justification .justification__wrapper .justification__item::before {
   position: absolute;
@@ -224,6 +247,102 @@ header .header__wrapper .nav .nav__link {
 }
 .justification .justification__wrapper .justification__item ul li {
   font-family: "Museo Sans Cyrl 300";
+  font-size: 20px;
   color: #121212;
   list-style: none;
+}
+
+.advantages .advantages__wrapper .advantages__block {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+.advantages .advantages__wrapper .advantages__block .advantages__content ul li {
+  list-style: none;
+}
+.advantages .advantages__wrapper .advantages__subblock {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+.advantages .advantages__wrapper .advantages__subblock .advantages__content ul li {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 20px;
+  list-style: none;
+}
+.packages {
+  background-color: #f5f5f5;
+}
+.packages .packages__wrapper {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+}
+.packages .packages__wrapper .packages__item {
+  width: 50%;
+}
+.packages .packages__wrapper .packages__item .packages__title {
+  font-family: "Museo Sans Cyrl 700";
+  background-color: #6742e1;
+  color: #fff;
+}
+.packages .packages__wrapper .packages__item ul li {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 20px;
+  list-style: none;
+  background-color: #fff;
+}
+.packages .packages__wrapper .packages__item ul li:last-child {
+  background-color: #d1c6f4;
+}
+.packages .packages__wrapper .packages__item .packages__cost {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.packages .packages__wrapper .packages__item .packages__cost .packages__text {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 20px;
+  background-color: #6742e1;
+  color: #fff;
+}
+.packages .packages__wrapper .packages__item .packages__subtext {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 20px;
+}
+
+.consultation h2 {
+  color: #fff;
+}
+.consultation .consultation__form {
+  background-color: #6742e1;
+}
+.consultation .consultation__form input {
+  font-size: 20px;
+  color: #121212;
+}
+.consultation .consultation__form button {
+  background-color: #000;
+  color: #fff;
+}
+
+.cases {
+  background-color: #fcfcfc;
+}
+.questions .questions__form input {
+  font-size: 20px;
+  font-family: "Museo Sans Cyrl 300";
+}
+.footer .footer__nav .footer__link {
+  font-size: 24px;
+  font-family: "Museo Sans Cyrl 500";
 }
