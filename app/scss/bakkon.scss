@@ -1,0 +1,499 @@
+@import "../fonts/fonts.scss";
+
+$font100: 'Museo Sans Cyrl 100';
+$font300: 'Museo Sans Cyrl 300';
+$font500: 'Museo Sans Cyrl 500';
+$font700: 'Museo Sans Cyrl 700';
+
+html{
+  font-size:16px;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.bakkon{
+  width: 100%;
+  box-sizing: border-box;
+  .bakkon__wrapper{
+    width: 100%;
+    .bakkon__block-1{
+      width: 100%;
+      height: 45.139rem;
+      background: url("../images/dest/bakkon/1.png") no-repeat;
+      background-size: contain;
+      .bakkon__text{
+        font-family: $font700;
+        padding-top: 34.170rem;
+        padding-left: 4.514rem;
+        font-size: 2.708rem;
+        text-transform: uppercase;
+      }
+    }
+    .bakkon__block-2{
+      width: 81.250rem;
+      height: 45.139rem;
+      background: url("../images/dest/bakkon/2.png");
+      background-size: contain;
+      padding-left: 4.514rem;
+      padding-top: 4.017rem;
+      box-sizing: border-box;
+      .block__title{
+        font-family: $font700;
+        font-size: 2.257rem;
+        margin-bottom: 0.767rem;
+        &:nth-child(1){
+          color: #488bd7;
+          text-transform: uppercase;
+        }
+        &:nth-child(3){
+          color: #4859d7;
+        }
+        &:nth-child(5){
+          color: #7448d7;
+        }
+        &:nth-child(7){
+          color: #c448d7;
+        }
+      }
+      ul{
+        width: 35.208rem;
+        padding-left: 1.354rem;
+        &:nth-child(6){
+          display: flex;
+          flex-direction: row;
+          li{
+            margin-right: 2.031rem;
+          }
+        }
+        li{
+          font-family: $font500;
+          line-height: 1.760rem;
+          font-size: 1.354rem;
+          margin-bottom: 1.264rem;
+        }
+      }
+    }
+    .bakkon__block-3{
+      width: 81.250rem;
+      height: 45.139rem;
+      background: url("../images/dest/bakkon/3.png");
+      background-size: contain;
+      padding-left: 4.514rem;
+      padding-top: 4.017rem;
+      box-sizing: border-box;
+      .block__title{
+        font-family: $font700;
+        font-size: 2.257rem;
+        margin-bottom: 0.767rem;
+        color: #48d7b0;
+      }
+      .block__subtitle{
+        font-family: $font500;
+        line-height: 1.760rem;
+        font-size: 1.354rem;
+        width: 54.167rem;
+        margin-bottom: 6.771rem;
+      }
+      .block__content{
+        display: flex;
+        flex-direction: row;
+        margin-left: 6.771rem;
+
+        .content__item{
+          display: flex;
+          flex-direction: column;
+
+          .item__title{
+            font-family: $font700;
+            font-size: 2.257rem;
+            margin-bottom: 1.580rem;
+          }
+          &:nth-child(1){
+            margin-right: 5.778rem;
+            .item__title{
+              color: #de4cf4;
+
+            }
+          }
+          &:nth-child(2){
+            width: 15.347rem;
+            margin-right: 6.771rem;
+            .item__title{
+              color: #8965ff;
+            }
+          }
+          &:nth-child(3){
+            width: 20.313rem;
+            .item__title{
+              color: #3ea2fd;
+            }
+          }
+            ul{
+              li{
+                font-family: $font500;
+                line-height: 1.760rem;
+                font-size: 1.354rem;
+                margin-bottom: 1.038rem;
+              }
+            }
+        }
+      }
+    }
+    .bakkon__block-4{
+      width: 81.250rem;
+      height: 45.139rem;
+      background: url("../images/dest/bakkon/4.png");
+      background-size: contain;
+      padding-left: 4.514rem;
+      padding-top: 4.017rem;
+      box-sizing: border-box;
+      .block__title{
+        font-family: $font700;
+        font-size: 2.257rem;
+        margin-bottom: 0.767rem;
+        &:nth-child(1){
+          color: #f69c43;
+        }
+        &:nth-child(3){
+          color: #f0473a;
+        }
+      }
+      ul{
+        padding-left: 1.354rem;
+        margin-bottom: 2.122rem;
+        li{
+          width: 50.556rem;
+          font-family: $font500;
+          line-height: 1.760rem;
+          font-size: 1.354rem;
+          margin-bottom: 1.038rem;
+        }
+      }
+    }
+    .bakkon__block-5 {
+      width: 81.250rem;
+      height: 45.139rem;
+      background: url("../images/dest/bakkon/5.png");
+      background-size: contain;
+      padding-left: 4.514rem;
+      padding-top: 4.017rem;
+      box-sizing: border-box;
+
+      .block__title {
+        font-family: $font700;
+        font-size: 2.257rem;
+        margin-bottom: 0.767rem;
+        &:nth-child(1){
+          color: #43b5f6;
+        }
+        &:nth-child(3){
+          color: #6f79ff;
+        }
+      }
+      .block__text{
+        font-family: $font500;
+        line-height: 1.806rem;
+        font-size: 1.354rem;
+        width: 50.556rem;
+        margin-bottom: 3.160rem;
+      }
+      ul{
+        padding-left: 1.354rem;
+        margin-bottom: 3.611rem;
+        li{
+          width: 50.556rem;
+          font-family: $font500;
+          line-height: 1.760rem;
+          font-size: 1.354rem;
+          margin-bottom: 0.993rem;
+        }
+      }
+      .block__subtitle{
+        font-family: $font500;
+        line-height: 1.806rem;
+        font-size: 1.354rem;
+        width: 48.750rem;
+        margin-bottom: 6.771rem;
+      }
+    }
+    .bakkon__block-6{
+      width: 81.250rem;
+      height: 45.139rem;
+      background: url("../images/dest/bakkon/6.png");
+      background-size: contain;
+      padding-left: 4.514rem;
+      padding-top: 8.441rem;
+      box-sizing: border-box;
+      .block__contacts{
+        font-family: $font500;
+        line-height: 1.806rem;
+        font-size: 1.354rem;
+        margin-bottom: 1.806rem;
+      }
+      .block__title{
+        font-family: $font700;
+        font-size: 2.257rem;
+        margin-bottom: 1.264rem;
+        color: #1323f5;
+      }
+      ul{
+        padding-left: 1.354rem;
+        margin-bottom: 3.611rem;
+        li{
+          width: 50.556rem;
+          font-family: $font500;
+          line-height: 1.760rem;
+          font-size: 1.354rem;
+          margin-bottom: 0.542rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1299px) {
+  html{
+    font-size: 13.29230769230769px;
+  }
+  .container{
+    width: 1080px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1079px) {
+  html{
+    font-size: 10.70769230769231px;
+  }
+  .container{
+    width: 870px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 869px) {
+  html{
+    font-size: 22.4px;
+  }
+  .container{
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .bakkon__wrapper {
+    background: url("../images/dest/bakkon/mobile.png");
+    background-size: contain;
+    .bakkon__block-1{
+      background: none !important;
+    }
+    .bakkon__block-2{
+      background: none !important;
+    }
+    .bakkon__block-3{
+      background: none !important;
+    }
+    .bakkon__block-4{
+      background: none !important;
+    }
+    .bakkon__block-5{
+      background: none !important;
+    }
+    .bakkon__block-6{
+      background: none !important;
+    }
+  }
+
+
+  .bakkon{
+    .bakkon__wrapper{
+      .bakkon__block-1{
+        width: 26.786rem;
+        height: 56.429rem;
+        .bakkon__text{
+          padding-top: 15.286rem;
+          padding-left: 1.214rem;
+          font-size: 2.143rem;
+          line-height: 3.214rem;
+          letter-spacing: -0.043rem;
+        }
+      }
+      .bakkon__block-2{
+        width: 26.786rem;
+        height: 67.143rem;
+        padding-left: 2.857rem;
+        padding-top: 1rem;
+        .block__title{
+          font-size: 2.143rem;
+          margin-bottom: 0.767rem;
+        }
+        ul{
+          width: 21.429rem;
+          padding-left: 1.354rem;
+          &:nth-child(6){
+            li{
+              margin-right: 2.031rem;
+            }
+          }
+          li{
+            line-height: 1.760rem;
+            font-size: 1.143rem;
+            margin-bottom: 1.214rem;
+          }
+        }
+      }
+      .bakkon__block-3{
+        width: 26.786rem;
+        height: 95.714rem;
+        padding-left: 2.857rem;
+        padding-top: 1.714rem;
+        .block__title{
+          font-size: 2.143rem;
+          margin-bottom: 1rem;
+        }
+        .block__subtitle{
+          line-height: 1.786rem;
+          font-size: 1.143rem;
+          width: 21.429rem;
+          margin-bottom: 3.000rem;
+        }
+        .block__content{
+          flex-direction: column;
+          margin-left: 1.429rem;
+          .content__item{
+            flex-direction: column;
+            margin-right: 0rem;
+            .item__title{
+              font-size: 2.143rem;
+              margin-bottom: 1.857rem;
+              margin-left: 0.714rem;
+            }
+            &:nth-child(1){
+              width: 21.429rem;
+              margin-bottom: 2.071rem;
+            }
+            &:nth-child(2){
+              width: 21.429rem;
+              margin-bottom: 2.143rem;
+            }
+            &:nth-child(3){
+              width: 21.429rem;
+              margin-bottom: 1.786rem;
+            }
+            ul{
+              li{
+                line-height: 1.786rem;
+                font-size: 1.143rem;
+                margin-bottom: 1.038rem;
+              }
+            }
+          }
+        }
+      }
+      .bakkon__block-4{
+        width: 26.786rem;
+        height: 71.429rem;
+        padding-left: 2.857rem;
+        padding-top: 1.857rem;
+        .block__title{
+          font-size: 2.143rem;
+          margin-bottom: 1.214rem;
+        }
+        ul{
+          padding-left: 1.354rem;
+          margin-bottom: 2.122rem;
+          li{
+            width: 20.714rem;
+            line-height: 1.760rem;
+            font-size: 1.143rem;
+            margin-bottom: 1.214rem;
+          }
+        }
+      }
+      .bakkon__block-5 {
+        width: 26.786rem;
+        height: 64.286rem;
+        padding-left: 2.857rem;
+        padding-top: 0.857rem;
+        .block__title {
+          font-size: 2.143rem;
+          margin-bottom: 1.071rem;
+          &:nth-child(3){
+            margin-bottom: 1.214rem;
+          }
+        }
+        .block__text{
+          line-height: 1.806rem;
+          font-size: 1.143rem;
+          width: 20.714rem;
+          margin-bottom: 2rem;
+        }
+        ul{
+          padding-left: 1.354rem;
+          margin-bottom: 1.857rem;
+          li{
+            width: 20.714rem;
+            line-height: 1.760rem;
+            font-size: 1.143rem;
+            margin-bottom: 1.143rem;
+          }
+        }
+        .block__subtitle{
+          line-height: 1.806rem;
+          font-size: 1.143rem;
+          width: 20.714rem;
+          margin-bottom: 6.771rem;
+        }
+      }
+      .bakkon__block-6{
+        width: 26.786rem;
+        height: 82.857rem;
+        padding-left: 2.857rem;
+        padding-top: 9.143rem;
+        .block__contacts{
+          line-height: 1.806rem;
+          font-size: 1.143rem;
+          margin-bottom: 1.806rem;
+        }
+        .block__title{
+          font-size: 2.143rem;
+          margin-bottom: 1.264rem;
+        }
+        ul{
+          padding-left: 1.354rem;
+          margin-bottom: 3.611rem;
+          li{
+            width: 20.714rem;
+            line-height: 1.760rem;
+            font-size: 1.143rem;
+            margin-bottom: 1.143rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  html {
+    font-size:14px;
+  }
+  .container {
+    width: 375px;
+    margin: 0 auto;
+  }
+}
