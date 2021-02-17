@@ -20,6 +20,7 @@ h2 {
 	padding: 0;
 	font-size: 50px;
 	font-family: $font700;
+	letter-spacing: -2px;
 }
 
 p,
@@ -59,12 +60,16 @@ a{
 }
 
 .btn--violet--underline{
+	font-size: 20px;
 	color: #fff;
 	background-color: #6742e1;
+	padding: 20px 44px;
+	position: absolute;
+	right: 4px;
+	bottom: -27px;
 }
 
 .btn--violet--underline{
-	position: relative;
 	&::before{
 		position: absolute;
 		bottom: -8px;
@@ -102,10 +107,12 @@ header {
 			display: -o-flex;
 			display: flex;
 			flex-direction: row;
+			margin-right: 40px;
 			.nav__link {
 				font-family: $font500;
 				font-size: 20px;
 				color: #fff;
+				margin-left: 50px;
 			}
 		}
   }
@@ -148,6 +155,7 @@ header {
 					font-family: $font500;
 					font-size: 26px;
 					letter-spacing: -1px;
+					float: right;
 				}
 			}
 			.intro__personal{
@@ -165,21 +173,43 @@ header {
 		}
 		.intro__submain{
 			height: 360px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: row;
+
 			.intro__photo{
+				width: 50%;
+				padding-left: 83px;
+				box-sizing: border-box;
+				padding-top: 30px;
 				img{
 					
 				}
 			}
 			.intro__content{
+				width: 50%;
+				box-sizing: border-box;
+				padding-left: 35px;
+				
 				.intro__text{
 					font-family: $font300;
 					font-size: 20px;
-					
+					line-height: 26px;
+					margin-top: 35px;
+					margin-bottom: 30px;
+					padding-right: 20px;
 				}
 				.intro__subcontent{
+					position: relative;
 					.inter__text{
 						font-family: $font900;
 						font-size: 60px;
+						line-height: 50px;
+						letter-spacing: -2.4px;
+						
 					}
 				}
 			}
@@ -188,69 +218,95 @@ header {
 }
 
 .experience{
-	height: 463px;
 	background-color: #6742e1;
+	padding-top: 125px;
+	padding-bottom: 45px;
 	.experience__backtext{
 		font-family: $font900;
 		color: #8766f3;
 		font-size: 150px;
+		text-transform: uppercase;
 	}
 	ul{
+		padding-left: 20px;
 		li{
 			font-family: $font300;
 			font-size: 20px;
+			line-height: 26px;
+			margin-bottom: 10px;
 			color: #fff;
+			padding-left: 3px;
 		}
 	}
 }
 
 .justification{
 	background-color: #f5f5f5;
+	padding-top: 50px;
+	padding-bottom: 20px;
 	h2{
-		
+		margin-bottom: 16px;
 	}
 	.justification__wrapper{
-
-		
+		.justification__item-space{
+			width: 40px;
+		}
 		.justification__item{
-			width: 50%;
-			float: left;
-			margin-bottom: 20px;
+			width: 679px;
+			margin-bottom: 40px;
+			background-color: #fff;
+			box-sizing: border-box;
+			padding-left: 46px;
+    	padding-top: 46px;
+			padding-right: 46px;
+			padding-bottom: 46px;
 			&::before{
 				position: absolute;
 				content: '';
-				left: 0;
-				top: 0;
+				left: 10px;
+				top: 10px;
 				z-index: 5;
 				width: 0; 
 				height: 0;
-			}
+			}	
+/*			&:nth-child(2n-1){
+				margin-right: 40px;
+			}	*/
 			&:nth-child(1)::before{
-				border-top: 30px solid #bd3565;
-				border-right: 30px solid transparent;
+				border-top: 40px solid #bd3565;
+				border-right: 40px solid transparent;
 			}	
 			&:nth-child(2)::before{
-				border-top: 30px solid #ce1acc;
-				border-right: 30px solid transparent;
+				border-top: 40px solid #ce1acc;
+				border-right: 40px solid transparent;
+			}
+			&:nth-child(2){
+				padding-bottom: 70px;
 			}
 			&:nth-child(3)::before{
-				border-top: 30px solid #5b35bd;
-				border-right: 30px solid transparent;
+				border-top: 40px solid #5b35bd;
+				border-right: 40px solid transparent;
 			}
 			&:nth-child(4)::before{
-				border-top: 30px solid #3568bd;
-				border-right: 30px solid transparent;
+				border-top: 40px solid #3568bd;
+				border-right: 40px solid transparent;
 			}
 			.justification__title{
 				font-family: $font700;
+				font-size: 20px;
+				line-height: 26px;
+				margin-bottom: 12px;
 				color: #121212;
 			}
 			ul{
+				padding-left: 12px;
 				li{
 					font-family: $font300;
 					font-size: 20px;
 					color: #121212;
 					list-style: none;
+					margin-bottom: 4px;
+					text-indent: -12px;
 				}
 			}
 		}
@@ -258,7 +314,10 @@ header {
 }
 
 .advantages{
+	
 	.advantages__wrapper{
+		padding-top: 30px;
+		padding-bottom: 52px;
 		.advantages__block{
 			display: -webkit-flex;
 			display: -moz-flex;
@@ -266,15 +325,28 @@ header {
 			display: -o-flex;
 			display: flex;
 			flex-direction: row;
+			margin-bottom: 50px;
 			.advantages__img{
+				box-sizing: border-box;
+				width: 50%;
+				padding-top: 6px;
+    		padding-left: 143px;
 				img{}
 			}
 			.advantages__content{
+				width: 50%;
+				padding-top: 26px;
+				box-sizing: border-box;
+				padding-right: 40px;
 				h2{
-					
+					line-height: 50px;
+					margin-bottom: 20px;
 				}
 				ul{
 					li{
+						font-family: $font300;
+						font-size: 20px;
+						line-height: 26px;
 						list-style: none;
 					}
 				}
@@ -288,16 +360,29 @@ header {
 			display: flex;
 			flex-direction: row;
 			.advantages__content{
-				h2{}
+				width: 50%;
+				box-sizing: border-box;
+				h2{
+					line-height: 50px;
+					padding-top: 42px;
+					box-sizing: border-box;
+					padding-right: 100px;
+					margin-bottom: 20px;
+				}
 				ul{
 					li{
 						font-family: $font300;
 						font-size: 20px;
+						line-height: 26px;
 						list-style: none;
 					}
 				}
 			}
 			.advantages__img{
+				width: 50%;
+				box-sizing: border-box;
+				padding-left: 174px;
+				padding-top: 10px;
 				img{}
 			}
 		}
@@ -307,7 +392,10 @@ header {
 .packages{
 	background-color: #f5f5f5;
 	h2{
-		
+		padding-top: 56px;
+    text-align: center;
+    line-height: 50px;
+		margin-bottom: 26px;
 	}
 	.packages__wrapper{
 		display: -webkit-flex;
@@ -320,8 +408,17 @@ header {
 			width: 50%;
 			.packages__title{
 				font-family: $font700;
+				font-size: 26px;
 				background-color: #6742e1;
 				color: #fff;
+				min-height: 60px;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				align-items: center;
+				padding-left: 32px;
 			}
 			ul{
 				li{
@@ -329,6 +426,15 @@ header {
 					font-size: 20px;
 					list-style: none;
 					background-color: #fff;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					align-items: center;
+					min-height: 52px;
+					border: 1px solid #ebebeb;
+					padding-left: 30px;
 					&:last-child{
 						background-color: #d1c6f4;
 					}
@@ -341,11 +447,13 @@ header {
 				display: -o-flex;
 				display: flex;
 				flex-direction: row;
-				justify-content: space-between;
+				align-items: center;
+				min-height: 52px;
+				background-color: #6742e1;
+				padding-left: 30px;
 				.packages__text{
 					font-family: $font700;
 					font-size: 20px;
-					background-color: #6742e1;
 					color: #fff;
 				}
 			}

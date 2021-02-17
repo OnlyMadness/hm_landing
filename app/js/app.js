@@ -8,11 +8,12 @@ $(document).ready(function(){
 // true - если у вас все блоки одинаковой ширины
 	  isResizable: false,
 // перестраивает блоки при изменении размеров окна
-	  isAnimated: false
+	  isAnimated: false,
+		gutter: '.justification__item-space',
 	}); 
 });
 
-$(document).ready(function(){ 
+/*$(document).ready(function(){ 
 	var $grid = $('#container').masonry({
 		itemSelector: '.justification__item',
 		percentPosition: true,
@@ -22,4 +23,4 @@ $(document).ready(function(){
 		$grid.masonry();
 	});  
 
-});
+});*/
