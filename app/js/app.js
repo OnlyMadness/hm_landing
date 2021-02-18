@@ -1,4 +1,4 @@
-
+/* Mansory */
 $(document).ready(function(){ 
 	$('#container').masonry({
 // указываем элемент-контейнер в котором расположены блоки для динамической верстки
@@ -13,14 +13,17 @@ $(document).ready(function(){
 	}); 
 });
 
-/*$(document).ready(function(){ 
-	var $grid = $('#container').masonry({
-		itemSelector: '.justification__item',
-		percentPosition: true,
-		columnWidth: '.justification__item'
-	});
-	$grid.imagesLoaded().progress( function() {
-		$grid.masonry();
-	});  
+/* InputMask */
+$(document).ready(function(){
+		$('.consultation__phone').inputmask({"mask": "+7 (999) 999-9999"}); 
+    $('.consultation__email').inputmask("email");   
+    $('.questions__phone').inputmask({"mask": "+7 (999) 999-9999"}); 
+    $('.questions__email').inputmask("email");     
+});
 
-});*/
+/*Slick slider*/
+$('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
