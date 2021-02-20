@@ -5,22 +5,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mobile.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/snab.css">
 	<title>Document</title>
 </head>
 <header>
-		<div class="container">
-			<div class="header__wrapper">
-				<div class="nav">
-					<a href="" class="nav__link">Опыт</a>
-					<a href="" class="nav__link">Комплексный маркетинг</a>
-					<a href="" class="nav__link">Кейсы</a>
-					<a href="" class="nav__link">Команда</a>
-				</div>
-				<a href="" class="btn btn--black">Связаться</a>
+	<div class="container">
+		<div class="header__wrapper">
+			<div class="nav">
+				<a href="" class="nav__link">Опыт</a>
+				<a href="" class="nav__link">Комплексный маркетинг</a>
+				<a href="" class="nav__link">Кейсы</a>
+				<a href="" class="nav__link">Команда</a>
 			</div>
+			<button class="burger">
+				<span class="burger__item"></span>
+			</button>
+			<a href="" class="btn btn--black">Связаться</a>
 		</div>
-	</header>
+	</div>
+</header>
 
 <body>
 	<div class="intro">
@@ -38,15 +46,12 @@
 						</div>
 					</div>
 					<div class="intro__personal">
-						<div class="intro__photo">
-							<img src="" alt="">
-						</div>
 						<div class="intro__subtitle">Михаил Труфанов</div>
 					</div>
 				</div>
 				<div class="intro__submain">
 					<div class="intro__photo">
-						<img src="/images/intro-img.png" alt="">
+						<img src="images/intro-img.png" alt="">
 					</div>
 					<div class="intro__content">
 						<div class="intro__text">Весь мой опыт работы связан с продажами, поиском новых каналов привлечения денег, анализом выручки, разработкой стратегий, систематизацией продаж и продвижением бизнеса или госсектора</div>
@@ -54,7 +59,7 @@
 							<div class="inter__text">
 								Я готов делиться своим опытом с вами
 							</div>
-								<a href="" class="btn btn--violet--underline">Принять опыт</a>
+							<a href="" class="btn btn--violet--underline">Принять опыт</a>
 						</div>
 					</div>
 				</div>
@@ -163,7 +168,7 @@
 				<div class="advantages__subblock">
 					<div class="advantages__content">
 						<h2>В каких случаях для вас
-							это удобно</h2>	
+							это удобно</h2>
 						<ul>
 							<li>- проектная работа</li>
 							<li>- в штате нет маркетолога</li>
@@ -262,8 +267,47 @@
 	<div class="cases">
 		<div class="container">
 			<div class="cases__slider">
-				<div class="cases__item">
+				<div class="cases__item" style="background: url(images/cases/pioneer/pioner-bg.png) center no-repeat #f1ede5">
+					<div class="cases__content"> 
+						<div class="cases__logo">
+							<img src="images/cases/pioneer/pioneer-logo.png" alt="">
+						</div>
+						<div class="cases__text" style="color: #101010;">Тут какой то текст о том как мы работали над проектом, что было сделано и так далее.</div>
+						<a href="" class="cases__link" style="color: #101010;">
+						<svg
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 width="14px" height="10px">
+						<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+						 d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z"/>
+						</svg>
+						Открыть кейс</a>
+					</div>
+					<div class="cases__photo">
+						<img src="images/cases/pioneer/pioneer-img.png" alt="">
+					</div>
 				</div>
+				<div class="cases__item" style="background: url(images/cases/tigre/pioneer-img.png) center no-repeat #2a2a2c">
+						<div class="cases__content"> 
+							<div class="cases__logo">
+								<img src="images/cases/tigre/tigre-logo.png" alt="">
+							</div>
+							<div class="cases__text" style="color: #ffffff;">Тут какой то текст о том как мы работали над проектом, что было сделано и так далее.</div>
+							<a href="" class="cases__link" style="color: #ffffff;">
+							<svg
+							 xmlns="http://www.w3.org/2000/svg"
+							 xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="14px" height="10px">
+							<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+							 d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z"/>
+							</svg>
+							Открыть кейс</a>
+						</div>
+						<div class="cases__photo">
+							<img src="images/cases/tigre/tigre-img.png" alt="">
+						</div>
+					</div>
+				<div class="cases__item"></div>
 				<div class="cases__item"></div>
 				<div class="cases__item"></div>
 				<div class="cases__item"></div>
@@ -279,10 +323,11 @@
 					<source src="video/team-video.mp4" type="video/mp4"><!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
 					<source src="video.webm" type="video/webm"><!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
 					<source src="video.ogv" type="video/ogg"><!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera -->
-					<object data="video.swf" type="application/x-shockwave-flash"><!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
+					<object data="video.swf" type="application/x-shockwave-flash">
+						<!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
 						<param name="movie" value="video.swf">
-					</object> 
-				</video>	
+					</object>
+				</video>
 			</div>
 		</div>
 	</div>
@@ -299,6 +344,64 @@
 		</div>
 	</div>
 
+	<div style="display: none;">
+			<div class="box-modal" id="exampleModal">
+					<div class="box-modal_close arcticmodal-close">X</div>
+					
+	<section class="snab">
+				<div class="snab__wrapper">
+					<div class="snab__block-1">
+						<div class="snab__title">ведение и настройка контекстной рекламы для ООО «Снабжение Восток»</div>
+						<div class="snab__subtitle">
+							<p>Компания ООО «Снабжение Восток» поставляет спецтехнику и запасные части.</p>
+							<p>Обладает складом запасных частей для SHANTUI, ZOOMLION, KOMATSU.</p> 
+							<p>География: Россия, русскоязычная аудитория по всему миру. </p>
+						</div>
+					</div>
+					<div class="snab__block-2">
+						<div class="snab__title">Цель:</div>
+						<div class="snab__subtitle">- привести поток лидов из поисковой рекламы в Google и Yandex.</div>						
+						<div class="snab__title">Задачи:</div>
+						<div class="snab__subtitle">
+							<ul>
+								<li>- разработка лендинга с учетом потребностей ЦА;</li>
+								<li>- настройка рекламных кампаний, их оптимизация;</li>
+								<li>- оценка рекламы и отчетность по числу лидов с сайта.</li>
+							</ul>	
+						</div>			
+						<div class="snab__title">Целевая аудитория:</div>
+						<div class="snab__subtitle">Преимущественно мужчины 30+ с руководящей должностью, работающие в строительстве.</div>
+					</div>	
+					<div class="snab__block-3">
+						<div class="snab__title">Проблемы:</div>
+						<div class="snab__subtitle">
+							<ul>
+								<li>- высокие ставки на поисковом аукционе, желание конкурентов быть на первой строке;</li>
+								<li>- невозможность встроиться в коммуникацию B2B, большой вклад прямых продаж.</li>
+							</ul>	
+						</div>	
+						<div class="snab__title">Решение:</div>
+						<div class="snab__subtitle">
+							<ul>
+								<li>- оптимизация ставок на целевое действие, уход от конкуренции за позицию;</li>
+								<li>- ремаркетинговые рекламные кампании в помощь к прямым продажам;</li>
+								<li>- медийные рекламные кампании по аудиториям похожим на тех, кто скачивали прайс.</li>
+							</ul>	
+						</div>	
+						<div class="snab__title">Неожиданная проблема:</div>
+						<div class="snab__subtitle">
+							<ul>
+								<li>- фрод из Индии, несмотря на ограничение по русскому языку (страна исключена).</li>
+							</ul>	
+						</div>	
+					</div>
+				</div>
+			</section>
+					
+					
+			</div>
+	</div>
+
 	<footer>
 		<div class="container">
 			<div class="footer__wrapper">
@@ -312,11 +415,13 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="/js/jquery-min.js"></script>
-	<script type="text/javascript" src="/js/mansory-min.js"></script>
-	<script type="text/javascript" src="/js/jquery.inputmask.min.js"></script>
-	<script type="text/javascript" src="/js/slick.min.js"></script>
-	<script type="text/javascript" src="/js/app.js"></script>
+	
+	<script type="text/javascript" src="js/jquery-min.js"></script>
+	<script type="text/javascript" src="js/mansory-min.js"></script>
+	<script type="text/javascript" src="js/jquery.inputmask.min.js"></script>
+	<script type="text/javascript" src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>

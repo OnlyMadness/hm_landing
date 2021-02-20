@@ -121,6 +121,9 @@ header {
 				margin-left: 50px;
 			}
 		}
+		.burger{
+			display: none;	
+		}
   }
 }
 
@@ -525,11 +528,71 @@ header {
 }
 
 .cases{
-	padding-top: 50px;
-	padding-bottom: 50px;
+	height: 603px;
 	background-color: #fcfcfc;
+	background: url(../images/cases/cases-bg.png) center;
 	.cases__slider{
-		
+		padding-top: 195px;
+		margin-left: -58px;
+		overflow: hidden;
+		.cases__item{
+			width: 670px;
+			height: 347px;
+			padding: 20px 35px;
+			box-sizing: border-box;
+			margin-left: 58px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			.cases__content{
+				width: 390px;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				flex-direction: column;
+				.cases__logo{
+					width: 120px;
+					height: 40px;
+					img{
+						width: 100%;
+						height: auto;
+					}
+				}
+				.cases__text{
+					font-family: $font300;
+					font-size: 20px;
+					height: 235px;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					align-items: center;
+					line-height: 30px;
+				}
+				.cases__link{
+					font-family: $font700;
+					font-size: 10px;
+				}
+				svg{
+					margin-right: 15px;
+					box-sizing: border-box;
+					padding-top: 2px;
+				}
+			}
+			.cases__photo{
+				width: 180px;
+				img{
+					height: 100%;
+				}
+			}
+		}
 	}
 }
 
@@ -631,11 +694,6 @@ footer{
 		}
 	}
 }
-
-
-
-
-
 
 
 

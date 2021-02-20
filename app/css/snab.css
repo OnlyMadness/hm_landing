@@ -1,0 +1,246 @@
+/*@font-face {
+  font-family: "Museo Sans Cyrl 500";
+  src: url("../fonts/MuseoSansCyrl-500.eot");
+  src: local("../fonts/MuseoSansCyrl-500"), url("../fonts/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl 900";
+  src: url("../fonts/MuseoSansCyrl-900.eot");
+  src: local("../fonts/MuseoSansCyrl-900"), url("../fonts/MuseoSansCyrl-900.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-900.woff") format("woff"), url("../fonts/MuseoSansCyrl-900.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl 700";
+  src: url("../fonts/MuseoSansCyrl-700.eot");
+  src: local("MuseoSansCyrl-700"), url("../fonts/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl 300";
+  src: url("../fonts/MuseoSansCyrl-300.eot");
+  src: local("../fonts/MuseoSansCyrl-300"), url("../fonts/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo Sans Cyrl 100";
+  src: url("../fonts/MuseoSansCyrl-100.eot");
+  src: local("../fonts/MuseoSansCyrl-100"), url("../fonts/MuseoSansCyrl-100.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-100.woff") format("woff"), url("../fonts/MuseoSansCyrl-100.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+html {
+  font-size: 11.5555555556px;
+}
+
+body{
+  line-height: initial !important;
+}
+
+body,
+ul,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1400px;
+}
+
+.snab__title {
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.snab__subtitle {
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 2.625rem;
+  line-height: 4.375rem;
+  color: #fff;
+}
+.snab__subtitle ul {
+  list-style: none;
+}
+
+.snab {
+  width: 100%;
+}
+.snab .snab__wrapper {
+  width: 100%;
+}
+.snab .snab__wrapper .snab__block-1 {
+  width: 100%;
+  height: 79.5rem;
+  background: url("../images/dest/snab/1.jpg");
+  background-size: contain;
+  box-sizing: border-box;
+  padding-top: 37rem;
+  padding-left: 6.25rem;
+}
+.snab .snab__wrapper .snab__block-1 .snab__title {
+  font-size: 4.625rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 14.375rem;
+  margin-bottom: 12.5rem;
+  line-height: 5.5rem;
+}
+.snab .snab__wrapper .snab__block-1 .snab__subtitle {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+.snab .snab__wrapper .snab__block-2 {
+  width: 100%;
+  height: 79.5rem;
+  background: url("../images/dest/snab/2.jpg");
+  background-size: contain;
+  box-sizing: border-box;
+  padding-top: 14.375rem;
+  padding-left: 7.5rem;
+}
+.snab .snab__wrapper .snab__block-2 .snab__title {
+  margin-bottom: 0.4375rem;
+}
+.snab .snab__wrapper .snab__block-2 .snab__subtitle {
+  margin-bottom: 4.125rem;
+}
+.snab .snab__wrapper .snab__block-3 {
+  width: 100%;
+  height: 79.5rem;
+  background: url("../images/dest/snab/3.jpg");
+  background-size: contain;
+  box-sizing: border-box;
+  padding-top: 11.25rem;
+  padding-left: 8.125rem;
+  padding-right: 5rem;
+}
+.snab .snab__wrapper .snab__block-3 .snab__title {
+  margin-bottom: 0px;
+}
+.snab .snab__wrapper .snab__block-3 .snab__subtitle {
+  margin-bottom: 3.3125rem;
+  line-height: 3.6875rem;
+}
+.snab.eng .snab__wrapper .snab__block-1 {
+  background: url("../images/dest/snab/1-eng.jpg");
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 1780px) {
+  html {
+    font-size: 9.6px;
+  }
+
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1240px) {
+  html {
+    font-size: 7.7333333333px;
+  }
+
+  .container {
+    width: 870px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 25.6px;
+  }
+
+  .snab.eng .snab__wrapper{
+    background: url("../images/dest/snab/snab-mobile-eng.jpg");
+    background-size: cover;
+  }
+
+  .snab__wrapper {
+    background: url("../images/dest/snab/snab-mobile.png");
+    background-size: cover;
+  }
+  .snab__wrapper .snab__block-1,
+.snab__wrapper .snab__block-2,
+.snab__wrapper .snab__block-3 {
+    background: none !important;
+  }
+
+  .container {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .snab__title {
+    font-size: 1.375rem;
+    line-height: 1.25rem;
+  }
+
+  .snab__subtitle {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+
+  .snab .snab__wrapper .snab__block-1 {
+    height: 41.25rem;
+    padding-top: 20.0625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.1875rem;
+  }
+  .snab .snab__wrapper .snab__block-1 .snab__title {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 3.4375rem;
+  }
+  .snab .snab__wrapper .snab__block-1 .snab__subtitle {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    text-align: left;
+  }
+  .snab .snab__wrapper .snab__block-1 .snab__subtitle p {
+    margin-bottom: 0.5625rem;
+  }
+  .snab .snab__wrapper .snab__block-2 {
+    height: 25.625rem;
+    padding-top: 2.125rem;
+    padding-left: 1.25rem;
+  }
+  .snab .snab__wrapper .snab__block-2 .snab__title {
+    margin-bottom: 0.1875rem;
+  }
+  .snab .snab__wrapper .snab__block-2 .snab__subtitle {
+    margin-bottom: 1.25rem;
+  }
+  .snab .snab__wrapper .snab__block-3 {
+    height: 34.0625rem;
+    padding-top: 1.0625rem;
+    padding-left: 1.25rem;
+    padding-right: 0.75rem;
+  }
+  .snab .snab__wrapper .snab__block-3 .snab__title {
+    margin-bottom: 0.1875rem;
+  }
+  .snab .snab__wrapper .snab__block-3 .snab__subtitle {
+    margin-bottom: 1.3125rem;
+    line-height: 1.375rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 375px;
+  }
+}*/
