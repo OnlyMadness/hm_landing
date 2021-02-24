@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mobile.css">
 	<link rel="stylesheet" href="css/slick.css">
@@ -192,6 +192,9 @@
 	<div class="packages">
 		<div class="container">
 			<h2>Выберите пакет либо свяжитесь со мной для обсуждения индивидульного предложения</h2>
+			<div class="packages__scroll">
+				<img src="images/scroll-icon.png" alt="">
+			</div>
 			<div class="packages__wrapper">
 				<div class="packages__item">
 					<div class="packages__title">Аудит</div>
@@ -208,8 +211,8 @@
 						<li> </li>
 						<li> </li>
 						<li> </li>
-						<li> </li>
-						<li> </li>
+						<li><br><br><br> </li>
+						<li><br><br> </li>
 						<li> </li>
 						<li>Период работы 2 месяца</li>
 					</ul>
@@ -250,6 +253,12 @@
 					</div>
 				</div>
 			</div>
+			<div class="packages__information">
+				<div class="packages__text">*анализ проводится в рамках бюджета на Интернет и Тв рекламу</div>
+				<div class="packages__text">**бюджет на рекламу не включен в пакет</div>
+				<div class="packages__text">НДС не предусмотрен. Не публичная оферта.</div>
+			</div>
+			
 		</div>
 	</div>
 	<div class="consultation">
@@ -274,12 +283,19 @@
 						</div>
 						<div class="cases__text" style="color: #101010;">Тут какой то текст о том как мы работали над проектом, что было сделано и так далее.</div>
 						<a href="" class="cases__link" style="color: #101010;">
-						<svg
+						<svg class="desktop"
 						 xmlns="http://www.w3.org/2000/svg"
 						 xmlns:xlink="http://www.w3.org/1999/xlink"
 						 width="14px" height="10px">
 						<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
 						 d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z"/>
+						</svg>
+						<svg class="mobile"
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 width="21px" height="15px">
+						<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+						 d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z"/>
 						</svg>
 						Открыть кейс</a>
 					</div>
@@ -294,23 +310,26 @@
 							</div>
 							<div class="cases__text" style="color: #ffffff;">Тут какой то текст о том как мы работали над проектом, что было сделано и так далее.</div>
 							<a href="" class="cases__link" style="color: #ffffff;">
-							<svg
-							 xmlns="http://www.w3.org/2000/svg"
-							 xmlns:xlink="http://www.w3.org/1999/xlink"
-							 width="14px" height="10px">
-							<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-							 d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z"/>
-							</svg>
+							<svg class="desktop"
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 width="14px" height="10px">
+						<path fill-rule="evenodd"  fill="rgb(225, 225, 0225225)"
+						 d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z"/>
+						</svg>
+							<svg class="mobile"
+						 xmlns="http://www.w3.org/2000/svg"
+						 xmlns:xlink="http://www.w3.org/1999/xlink"
+						 width="21px" height="15px">
+						<path fill-rule="evenodd"  fill="rgb(225, 225, 225)"
+						 d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z"/>
+						</svg>
 							Открыть кейс</a>
 						</div>
 						<div class="cases__photo">
 							<img src="images/cases/tigre/tigre-img.png" alt="">
 						</div>
 					</div>
-				<div class="cases__item"></div>
-				<div class="cases__item"></div>
-				<div class="cases__item"></div>
-				<div class="cases__item"></div>
 			</div>
 		</div>
 	</div>
@@ -412,6 +431,7 @@
 					<a href="" class="footer__link">Команда</a>
 					<a href="" class="footer__link">Связаться</a>
 				</nav>
+				<div class="footer__copyright">Copyright 2021</div>
 			</div>
 		</div>
 	</footer>

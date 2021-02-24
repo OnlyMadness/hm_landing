@@ -22,12 +22,26 @@ $(document).ready(function(){
 });
 
 /*Slick slider*/
+
+
+
+
 $('.cases__slider').slick({
   infinite: true,
   slidesToShow: 2,
   slidesToScroll: 1,
+	responsive: [
+    {
+      breakpoint: 501,
+      settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true
+      }
+    }
+	],
 	prevArrow:"<button type='button' class='slick-prev'></button>",
-	nextArrow:"<button type='button' class='slick-next'></button>"
+	nextArrow:"<button type='button' class='slick-next'></button>",
 });
 
 /*Modal*/

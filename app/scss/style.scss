@@ -344,7 +344,10 @@ header {
 				width: 50%;
 				padding-top: 6px;
     		padding-left: 143px;
-				img{}
+				img{
+					width: auto;
+					height: 100%;
+				}
 			}
 			.advantages__content{
 				width: 50%;
@@ -411,6 +414,9 @@ header {
     line-height: 50px;
 		margin-bottom: 26px;
 	}
+	.packages__scroll{
+		display: none;
+	}
 	.packages__wrapper{
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -449,6 +455,9 @@ header {
 					min-height: 49px;
 					border: 1px solid #ebebeb;
 					padding-left: 30px;
+					br{
+						display: none;
+					}
 					&:last-child{
 						background-color: #d1c6f4;
 					}
@@ -484,6 +493,9 @@ header {
 				background-color: #fff;
 			}
 		}
+	}
+	.packages__information{
+		display: none;	
 	}
 }
 .consultation{
