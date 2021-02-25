@@ -48,7 +48,7 @@
 
 .box-modal {
 	position: relative;
-	width: 1300px;
+	width: 1370px;
 	padding: 16px;
 	background: #fff;
 	color: #3c3c3c;
@@ -69,4 +69,15 @@
 
 .box-modal_close:hover {
 	color: #666;
+}
+
+@media screen and (max-width: 1400px){
+	.box-modal {
+		width: 960px;
+	}
+}
+@media screen and (max-width: 1085px){
+	.box-modal {
+		width: 745px;
+	}
 }

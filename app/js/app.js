@@ -32,7 +32,7 @@ $('.cases__slider').slick({
   slidesToScroll: 1,
 	responsive: [
     {
-      breakpoint: 501,
+      breakpoint: 782,
       settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -47,9 +47,44 @@ $('.cases__slider').slick({
 /*Modal*/
 
 
-/*$(function(){
-    $('#exampleModal').arcticmodal();
-});*/
+$(function(){
+    $('#modal-snab-vostok').arcticmodal();
+});
+
+/* modal-snab-vostok.onclick = function(event) {
+	
+};*/
+
+$(function () {
+    /*Smooth scroll*/
+    $("[data-scroll]").on("click", function(event){
+        event.preventDefault(); /*отменяет перезагрузку страницы по сылке*/
+        $('#nav').removeClass('show');
+        $('.burger__item').removeClass('active');
+        let  elementId = $(this).data('scroll'); /*получаем id на который кликнули*/
+        let  elementOffset = $(elementId).offset().top; /*получаем высоту от верха до начала элемента*/
+        $("html, body").animate({
+            scrollTop : elementOffset 
+        }, 700);
+    });
+});
+
+$(function(){
+   $('.btn--burger').on("click", function(event){
+       $('#nav').toggleClass('show'); 
+       $('.burger__item').toggleClass('active');
+   });
+});
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
 	<link rel="stylesheet" href="css/snab.css">
 	<title>Document</title>
 </head>
@@ -17,10 +17,10 @@
 	<div class="container">
 		<div class="header__wrapper">
 			<div class="nav">
-				<a href="" class="nav__link">Опыт</a>
-				<a href="" class="nav__link">Комплексный маркетинг</a>
-				<a href="" class="nav__link">Кейсы</a>
-				<a href="" class="nav__link">Команда</a>
+				<a href="" data-scroll="#expearence" class="nav__link">Опыт</a>
+				<a href="" data-scroll="#marketing" class="nav__link">Комплексный маркетинг</a>
+				<a href="" data-scroll="#cases" class="nav__link">Кейсы</a>
+				<a href="" data-scroll="#team" class="nav__link">Команда</a>
 			</div>
 			<button class="burger">
 				<span class="burger__item"></span>
@@ -67,7 +67,7 @@
 		</div>
 	</div>
 
-	<div class="experience">
+	<div class="experience" id="expearence">
 		<div class="container">
 			<ul>
 				<li>2004-2008 гг. управлял BTL проектами на территории ДВФО в рекламных агентствах.</li>
@@ -189,7 +189,7 @@
 		</div>
 	</div>
 
-	<div class="packages">
+	<div class="packages" id="marketing">
 		<div class="container">
 			<h2>Выберите пакет либо свяжитесь со мной для обсуждения индивидульного предложения</h2>
 			<div class="packages__scroll">
@@ -258,7 +258,7 @@
 				<div class="packages__text">**бюджет на рекламу не включен в пакет</div>
 				<div class="packages__text">НДС не предусмотрен. Не публичная оферта.</div>
 			</div>
-			
+
 		</div>
 	</div>
 	<div class="consultation">
@@ -273,68 +273,52 @@
 		</div>
 	</div>
 
-	<div class="cases">
+	<div class="cases" id="cases">
 		<div class="container">
 			<div class="cases__slider">
 				<div class="cases__item" style="background: url(images/cases/pioneer/pioner-bg.png) center no-repeat #f1ede5">
-					<div class="cases__content"> 
+					<div class="cases__content">
 						<div class="cases__logo">
 							<img src="images/cases/pioneer/pioneer-logo.png" alt="">
 						</div>
 						<div class="cases__text" style="color: #101010;">Тут какой то текст о том как мы работали над проектом, что было сделано и так далее.</div>
 						<a href="" class="cases__link" style="color: #101010;">
-						<svg class="desktop"
-						 xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink"
-						 width="14px" height="10px">
-						<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-						 d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z"/>
-						</svg>
-						<svg class="mobile"
-						 xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink"
-						 width="21px" height="15px">
-						<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-						 d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z"/>
-						</svg>
-						Открыть кейс</a>
+							<svg class="desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="10px">
+								<path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z" />
+							</svg>
+							<svg class="mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="15px">
+								<path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z" />
+							</svg>
+							Открыть кейс</a>
 					</div>
 					<div class="cases__photo">
 						<img src="images/cases/pioneer/pioneer-img.png" alt="">
 					</div>
 				</div>
 				<div class="cases__item" style="background: url(images/cases/tigre/pioneer-img.png) center no-repeat #2a2a2c">
-						<div class="cases__content"> 
-							<div class="cases__logo">
-								<img src="images/cases/tigre/tigre-logo.png" alt="">
-							</div>
-							<div class="cases__text" style="color: #ffffff;">Тут какой то текст о том как мы работали над проектом, что было сделано и так далее.</div>
-							<a href="" class="cases__link" style="color: #ffffff;">
-							<svg class="desktop"
-						 xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink"
-						 width="14px" height="10px">
-						<path fill-rule="evenodd"  fill="rgb(225, 225, 0225225)"
-						 d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z"/>
-						</svg>
-							<svg class="mobile"
-						 xmlns="http://www.w3.org/2000/svg"
-						 xmlns:xlink="http://www.w3.org/1999/xlink"
-						 width="21px" height="15px">
-						<path fill-rule="evenodd"  fill="rgb(225, 225, 225)"
-						 d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z"/>
-						</svg>
+					<div class="cases__content">
+						<div class="cases__logo">
+							<img src="images/cases/tigre/tigre-logo.png" alt="">
+						</div>
+						<div class="cases__text" style="color: #ffffff;">Тут какой то текст о том как мы работали над проектом, что было сделано и так далее.</div>
+						<a href="" class="cases__link" style="color: #ffffff;">
+							<svg class="desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="10px">
+								<path fill-rule="evenodd" fill="rgb(225, 225, 0225225)" d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z" />
+							</svg>
+							<svg class="mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="15px">
+								<path fill-rule="evenodd" fill="rgb(225, 225, 225)" d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z" />
+							</svg>
 							Открыть кейс</a>
-						</div>
-						<div class="cases__photo">
-							<img src="images/cases/tigre/tigre-img.png" alt="">
-						</div>
 					</div>
+					<div class="cases__photo">
+						<img src="images/cases/tigre/tigre-img.png" alt="">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="team">
+	<div class="team" id="team">
 		<div class="container">
 			<div class="team__wrapper">
 				<div class="team__title">Команда</div>
@@ -364,62 +348,60 @@
 	</div>
 
 	<div style="display: none;">
-			<div class="box-modal" id="exampleModal">
-					<div class="box-modal_close arcticmodal-close">X</div>
-					
-	<section class="snab">
+		<div class="box-modal" id="modal-snab-vostok">
+			<div class="box-modal_close arcticmodal-close">X</div>
+			<section class="snab">
 				<div class="snab__wrapper">
 					<div class="snab__block-1">
 						<div class="snab__title">ведение и настройка контекстной рекламы для ООО «Снабжение Восток»</div>
 						<div class="snab__subtitle">
 							<p>Компания ООО «Снабжение Восток» поставляет спецтехнику и запасные части.</p>
-							<p>Обладает складом запасных частей для SHANTUI, ZOOMLION, KOMATSU.</p> 
+							<p>Обладает складом запасных частей для SHANTUI, ZOOMLION, KOMATSU.</p>
 							<p>География: Россия, русскоязычная аудитория по всему миру. </p>
 						</div>
 					</div>
 					<div class="snab__block-2">
 						<div class="snab__title">Цель:</div>
-						<div class="snab__subtitle">- привести поток лидов из поисковой рекламы в Google и Yandex.</div>						
+						<div class="snab__subtitle">- привести поток лидов из поисковой рекламы в Google и Yandex.</div>
 						<div class="snab__title">Задачи:</div>
 						<div class="snab__subtitle">
 							<ul>
 								<li>- разработка лендинга с учетом потребностей ЦА;</li>
 								<li>- настройка рекламных кампаний, их оптимизация;</li>
 								<li>- оценка рекламы и отчетность по числу лидов с сайта.</li>
-							</ul>	
-						</div>			
+							</ul>
+						</div>
 						<div class="snab__title">Целевая аудитория:</div>
 						<div class="snab__subtitle">Преимущественно мужчины 30+ с руководящей должностью, работающие в строительстве.</div>
-					</div>	
+					</div>
 					<div class="snab__block-3">
 						<div class="snab__title">Проблемы:</div>
 						<div class="snab__subtitle">
 							<ul>
 								<li>- высокие ставки на поисковом аукционе, желание конкурентов быть на первой строке;</li>
 								<li>- невозможность встроиться в коммуникацию B2B, большой вклад прямых продаж.</li>
-							</ul>	
-						</div>	
+							</ul>
+						</div>
 						<div class="snab__title">Решение:</div>
 						<div class="snab__subtitle">
 							<ul>
 								<li>- оптимизация ставок на целевое действие, уход от конкуренции за позицию;</li>
 								<li>- ремаркетинговые рекламные кампании в помощь к прямым продажам;</li>
 								<li>- медийные рекламные кампании по аудиториям похожим на тех, кто скачивали прайс.</li>
-							</ul>	
-						</div>	
+							</ul>
+						</div>
 						<div class="snab__title">Неожиданная проблема:</div>
 						<div class="snab__subtitle">
 							<ul>
 								<li>- фрод из Индии, несмотря на ограничение по русскому языку (страна исключена).</li>
-							</ul>	
-						</div>	
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
-					
-					
-			</div>
+		</div>
 	</div>
+
 
 	<footer>
 		<div class="container">
@@ -435,7 +417,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<script type="text/javascript" src="js/jquery-min.js"></script>
 	<script type="text/javascript" src="js/mansory-min.js"></script>
 	<script type="text/javascript" src="js/jquery.inputmask.min.js"></script>

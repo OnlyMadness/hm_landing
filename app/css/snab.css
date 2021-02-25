@@ -1,4 +1,4 @@
-/*@font-face {
+@font-face {
   font-family: "Museo Sans Cyrl 500";
   src: url("../fonts/MuseoSansCyrl-500.eot");
   src: local("../fonts/MuseoSansCyrl-500"), url("../fonts/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl-500.ttf") format("truetype");
@@ -33,35 +33,17 @@
   font-weight: 300;
   font-style: normal;
 }
-html {
-  font-size: 11.5555555556px;
-}
-
-body{
-  line-height: initial !important;
-}
-
-body,
-ul,
-p {
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  width: 1400px;
-}
-
 .snab__title {
   font-family: "Museo Sans Cyrl 700";
-  font-size: 3.5rem;
+  font-size: 2.666rem;
+  line-height: 4rem;
   color: #fff;
 }
 
 .snab__subtitle {
   font-family: "Museo Sans Cyrl 300";
-  font-size: 2.625rem;
-  line-height: 4.375rem;
+  font-size: 2rem;
+  line-height: 3.333rem;
   color: #fff;
 }
 .snab__subtitle ul {
@@ -76,97 +58,61 @@ p {
 }
 .snab .snab__wrapper .snab__block-1 {
   width: 100%;
-  height: 79.5rem;
-  background: url("../images/dest/snab/1.jpg");
+  height: 60.571rem;
+  background: url("../images/dest/snab/11.png");
   background-size: contain;
   box-sizing: border-box;
-  padding-top: 37rem;
-  padding-left: 6.25rem;
+  padding-top: 28.19rem;
+  padding-left: 4.761rem;
 }
 .snab .snab__wrapper .snab__block-1 .snab__title {
-  font-size: 4.625rem;
+  font-size: 3.523rem;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 14.375rem;
-  margin-bottom: 12.5rem;
-  line-height: 5.5rem;
+  padding: 0 10.952rem;
+  margin-bottom: 9.523rem;
 }
 .snab .snab__wrapper .snab__block-1 .snab__subtitle {
-  font-size: 2.5rem;
+  font-size: 1.904rem;
   text-align: center;
-  line-height: 3rem;
+  line-height: 2.285rem;
 }
 .snab .snab__wrapper .snab__block-2 {
   width: 100%;
-  height: 79.5rem;
-  background: url("../images/dest/snab/2.jpg");
+  height: 60.571rem;
+  background: url("../images/dest/snab/22.png");
   background-size: contain;
   box-sizing: border-box;
-  padding-top: 14.375rem;
-  padding-left: 7.5rem;
+  padding-top: 10.952rem;
+  padding-left: 5.714rem;
 }
 .snab .snab__wrapper .snab__block-2 .snab__title {
-  margin-bottom: 0.4375rem;
+  margin-bottom: 0.333rem;
 }
 .snab .snab__wrapper .snab__block-2 .snab__subtitle {
-  margin-bottom: 4.125rem;
+  margin-bottom: 3.142rem;
 }
 .snab .snab__wrapper .snab__block-3 {
   width: 100%;
-  height: 79.5rem;
-  background: url("../images/dest/snab/3.jpg");
+  height: 60.571rem;
+  background: url("../images/dest/snab/33.png");
   background-size: contain;
   box-sizing: border-box;
-  padding-top: 11.25rem;
-  padding-left: 8.125rem;
-  padding-right: 5rem;
+  padding-top: 8.571rem;
+  padding-left: 6.19rem;
+  padding-right: 3.809rem;
 }
 .snab .snab__wrapper .snab__block-3 .snab__title {
   margin-bottom: 0px;
 }
 .snab .snab__wrapper .snab__block-3 .snab__subtitle {
-  margin-bottom: 3.3125rem;
-  line-height: 3.6875rem;
+  margin-bottom: 2.523rem;
+  line-height: 2.809rem;
 }
-.snab.eng .snab__wrapper .snab__block-1 {
-  background: url("../images/dest/snab/1-eng.jpg");
-  background-size: cover;
-}
-
-
-@media screen and (max-width: 1780px) {
-  html {
-    font-size: 9.6px;
-  }
-
-  .container {
-    width: 1080px;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 1240px) {
-  html {
-    font-size: 7.7333333333px;
-  }
-
-  .container {
-    width: 870px;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 1000px) {
-  html {
-    font-size: 25.6px;
-  }
-
-  .snab.eng .snab__wrapper{
-    background: url("../images/dest/snab/snab-mobile-eng.jpg");
-    background-size: cover;
-  }
-
+@media screen and (max-width: 781px) {
   .snab__wrapper {
     background: url("../images/dest/snab/snab-mobile.png");
-    background-size: cover;
+    background-size: contain;
   }
   .snab__wrapper .snab__block-1,
 .snab__wrapper .snab__block-2,
@@ -174,73 +120,59 @@ p {
     background: none !important;
   }
 
-  .container {
-    width: 600px;
-    margin: 0 auto;
-  }
-
   .snab__title {
-    font-size: 1.375rem;
-    line-height: 1.25rem;
+    font-size: 22px;
+    line-height: 20px;
   }
 
   .snab__subtitle {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .snab .snab__wrapper .snab__block-1 {
-    height: 41.25rem;
-    padding-top: 20.0625rem;
-    padding-left: 1.25rem;
-    padding-right: 1.1875rem;
+    height: 660px;
+    padding-top: 321px;
+    padding-left: 20px;
+    padding-right: 19px;
   }
   .snab .snab__wrapper .snab__block-1 .snab__title {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
+    font-size: 24px;
+    line-height: 30px;
     text-align: left;
     padding: 0;
-    margin-bottom: 3.4375rem;
+    margin-bottom: 55px;
   }
   .snab .snab__wrapper .snab__block-1 .snab__subtitle {
-    font-size: 1.125rem;
-    line-height: 1.25rem;
+    font-size: 18px;
+    line-height: 20px;
     text-align: left;
   }
   .snab .snab__wrapper .snab__block-1 .snab__subtitle p {
-    margin-bottom: 0.5625rem;
+    margin-bottom: 9px;
   }
   .snab .snab__wrapper .snab__block-2 {
-    height: 25.625rem;
-    padding-top: 2.125rem;
-    padding-left: 1.25rem;
+    height: 410px;
+    padding-top: 34px;
+    padding-left: 20px;
   }
   .snab .snab__wrapper .snab__block-2 .snab__title {
-    margin-bottom: 0.1875rem;
+    margin-bottom: 3px;
   }
   .snab .snab__wrapper .snab__block-2 .snab__subtitle {
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
   }
   .snab .snab__wrapper .snab__block-3 {
-    height: 34.0625rem;
-    padding-top: 1.0625rem;
-    padding-left: 1.25rem;
-    padding-right: 0.75rem;
+    height: 545px;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 12px;
   }
   .snab .snab__wrapper .snab__block-3 .snab__title {
-    margin-bottom: 0.1875rem;
+    margin-bottom: 3px;
   }
   .snab .snab__wrapper .snab__block-3 .snab__subtitle {
-    margin-bottom: 1.3125rem;
-    line-height: 1.375rem;
+    margin-bottom: 21px;
+    line-height: 22px;
   }
 }
-@media screen and (max-width: 599px) {
-  html {
-    font-size: 16px;
-  }
-
-  .container {
-    width: 375px;
-  }
-}*/

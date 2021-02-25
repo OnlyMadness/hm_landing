@@ -1,0 +1,576 @@
+@import "../fonts/fonts.scss";
+
+$font100: 'Museo Sans Cyrl 100';
+$font300: 'Museo Sans Cyrl 300';
+$font500: 'Museo Sans Cyrl 500';
+$font700: 'Museo Sans Cyrl 700';
+$font900: 'Museo Sans Cyrl 900';
+
+html {
+	font-size: 14.85714285714286px;
+}
+
+body,
+ul,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1300px;
+}
+
+.marathon__title {
+	font-family: $font700;
+	font-size: 1.875rem;
+	line-height: 4.375rem;
+}
+
+.marathon__subtitle {
+	font-family: $font300;
+	font-size: 1.5rem;
+
+	ul {
+		list-style: none;
+	}
+}
+
+.marathon__text {
+	font-family: $font300;
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+
+.marathon__subtext {
+	font-family: $font300;
+	font-size: 1.25rem;
+	line-height: 1.875rem;
+}
+
+span {
+	font-family: $font700;
+	font-style: italic;
+}
+
+.marathon {
+	width: 100%;
+
+	.marathon__wrapper {
+		width: 100%;
+
+		.marathon__block-1 {
+			width: 100%;
+			height: 50rem;
+			background: url("../images/dest/marathon/1.png");
+			background-size: contain;
+		}
+
+		.marathon__block-2 {
+			width: 100%;
+			height: 50rem;
+			background: url("../images/dest/marathon/2.png");
+			background-size: contain;
+			box-sizing: border-box;
+			padding-top: 1.6875rem;
+			padding-left: 2.875rem;
+
+			.marathon__title {
+				margin-bottom: 4.4375rem;
+			}
+
+			.marathon__text {
+				width: 45%;
+			}
+
+		}
+
+		.marathon__block-3 {
+			width: 100%;
+			height: 50rem;
+			background: url("../images/dest/marathon/3.png");
+			background-size: contain;
+			box-sizing: border-box;
+			padding-top: 1.6875rem;
+			padding-left: 2.875rem;
+
+			.marathon__title {
+				margin-bottom: 5rem;
+			}
+
+			.marathon__subtitle {
+				ul {
+					margin-left: 2.375rem;
+
+					li {
+						margin-bottom: 1.1875rem;
+
+					}
+				}
+			}
+		}
+	}
+
+	.marathon__block-4 {
+		width: 100%;
+		height: 50rem;
+		background: url("../images/dest/marathon/4.png");
+		background-size: contain;
+		box-sizing: border-box;
+		padding-top: 1.6875rem;
+		padding-left: 2.875rem;
+
+		.marathon__title {
+			margin-bottom: 4.4375rem;
+		}
+
+		.marathon__text {
+			width: 46%;
+			margin-bottom: 1.4375rem;
+
+			&:nth-child(2) span {
+				color: #f75e34;
+			}
+		}
+	}
+
+	.marathon__block-5 {
+		width: 100%;
+		height: 50rem;
+		background: url("../images/dest/marathon/5.png");
+		background-size: contain;
+		box-sizing: border-box;
+		padding-top: 1.6875rem;
+		padding-left: 2.875rem;
+
+		.marathon__title {
+			margin-bottom: 4.4375rem;
+		}
+
+		.marathon__text {
+			width: 47%;
+			margin-bottom: 2.375rem;
+		}
+
+		.marathon__subtitle {
+			ul {
+				li {
+					margin-bottom: 1.25rem;
+
+					span {}
+				}
+			}
+		}
+	}
+
+	.marathon__block-6 {
+		width: 100%;
+		height: 50rem;
+		background: url("../images/dest/marathon/6.png");
+		background-size: contain;
+		box-sizing: border-box;
+		padding-top: 1.6875rem;
+		padding-left: 2.875rem;
+
+		.marathon__title {
+			margin-bottom: 5.4375rem;
+		}
+
+		.marathon__text {
+			width: 47%;
+			margin-bottom: 2.375rem;
+		}
+
+		.marathon__subtitle {
+			ul {
+				padding-left: 5.875rem;
+				margin-bottom: 10rem;
+
+				li {
+					margin-bottom: 3.1875rem;
+
+					span {}
+				}
+			}
+		}
+
+		.marathon__subtext {
+			width: 42%;
+		}
+	}
+
+	.marathon__block-7 {
+		width: 100%;
+		height: 50rem;
+		background: url("../images/dest/marathon/7.png");
+		background-size: contain;
+		box-sizing: border-box;
+		padding-top: 1.6875rem;
+		padding-left: 2.875rem;
+
+		.marathon__title {
+			margin-bottom: 9rem;
+		}
+
+		.marathon__statistics {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: row;
+			font-family: $font300;
+			font-size: 1.875rem;
+			line-height: 2.5rem;
+
+			.marathon__title-cost {
+				width: 70%;
+			}
+
+			.marathon__img {
+				display: none;
+			}
+
+			.marathon__title-country {
+				width: 30%;
+				padding-left: 10rem;
+				padding-right: 1.25rem;
+			}
+		}
+	}
+
+	.marathon__block-8 {
+		width: 100%;
+		height: 50rem;
+		background: url("../images/dest/marathon/8.png");
+		background-size: contain;
+		box-sizing: border-box;
+		padding-top: 1.6875rem;
+		padding-left: 2.875rem;
+
+		.marathon__title {}
+
+		.marathon__img {
+			display: none;
+		}
+	}
+
+	.marathon__block-9 {
+		width: 100%;
+		height: 50rem;
+		background: url("../images/dest/marathon/9.png");
+		background-size: contain;
+		box-sizing: border-box;
+		padding-top: 1.6875rem;
+		padding-left: 2.875rem;
+
+		.marathon__title {
+			margin-bottom: 5rem;
+		}
+
+		.marathon__subtitle {
+			ul {
+				padding-left: 0;
+
+				li {
+					margin-bottom: 2.5625rem;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1299px) {
+	html {
+		font-size: 12.34285714285714px;
+	}
+
+	.container {
+		width: 1080px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1079px) {
+	html {
+		font-size: 9.942857142857143px;
+	}
+
+	.container {
+		width: 870px;
+		margin: 0 auto;
+	}
+}
+
+
+@media screen and (max-width: 870px) {
+	html {
+		font-size: 25.6px;
+	}
+
+	.container {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+	.marathon__wrapper {
+		background: url("../images/dest/marathon/marathon-mobile-img.png");
+		background-size: contain;
+
+		.marathon__block-1,
+		.marathon__block-2,
+		.marathon__block-3,
+		.marathon__block-4,
+		.marathon__block-5,
+		.marathon__block-6,
+		.marathon__block-7,
+		.marathon__block-8,
+		.marathon__block-9,
+			{
+			background: none !important;
+		}
+	}
+
+	.marathon__title {
+		font-size: 2.0625rem;
+		line-height: 2.5rem;
+	}
+
+	.marathon__subtitle {
+		font-size: 1rem;
+		line-height: 2.5rem
+	}
+
+	.marathon__text {
+		font-size: 1rem;
+		line-height: 1.75rem;
+	}
+
+	.marathon__subtext {
+		font-size: 0.875rem;
+	}
+
+
+	.marathon {
+		.marathon__wrapper {
+			.marathon__block-1 {
+				height: 32.25rem;
+			}
+
+			.marathon__block-2 {
+				height: 41.25rem;
+				padding-top: 2.75rem;
+				padding-left: 1.25rem;
+				padding-right: 1.25rem;
+
+				.marathon__title {
+					margin-bottom: 2.25rem;
+				}
+
+				.marathon__text {
+					width: 100%;
+				}
+			}
+
+			.marathon__block-3 {
+				height: 45rem;
+				padding-top: 9rem;
+				padding-left: 1.25rem;
+				padding-right: 1.25rem;
+
+				.marathon__title {
+					margin-bottom: 1.9375rem;
+				}
+
+				.marathon__subtitle {
+					ul {
+						margin-left: 1.75rem;
+
+						li {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.marathon__block-4 {
+			height: 58.4375rem;
+			padding-top: 3.0625rem;
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
+
+			.marathon__title {
+				margin-bottom: 2.25rem;
+			}
+
+			.marathon__text {
+				width: 100%;
+				margin-bottom: 1.6875rem;
+			}
+		}
+
+		.marathon__block-5 {
+			height: 49.25rem;
+			padding-top: 2.75rem;
+			padding-left: 1.25rem;
+			padding-right: 1.1875rem;
+
+			.marathon__title {
+				margin-bottom: 2.25rem;
+				width: 40%;
+			}
+
+			.marathon__text {
+				width: 100%;
+				margin-bottom: 0.9375rem;
+			}
+
+			.marathon__subtitle {
+				ul {
+					padding-left: 0.9375rem;
+					line-height: 1.5rem;
+
+					li {
+						margin-bottom: 1rem;
+
+						span {}
+					}
+				}
+			}
+		}
+
+		.marathon__block-6 {
+			height: 54.5rem;
+			padding-top: 2.75rem;
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
+
+			.marathon__title {
+				margin-bottom: 3rem;
+			}
+
+			.marathon__text {
+				width: 47%;
+				margin-bottom: 2.375rem;
+			}
+
+			.marathon__subtitle {
+				ul {
+					padding-left: 4rem;
+					margin-bottom: 1.8125rem;
+
+					li {
+						margin-bottom: 1.125rem;
+
+						span {}
+					}
+				}
+			}
+
+			.marathon__subtext {
+				width: 100%;
+			}
+		}
+
+		.marathon__block-7 {
+			height: 87.8125rem;
+			padding-top: 2.6875rem;
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
+
+			.marathon__title {
+				margin-bottom: 2.9375rem;
+
+			}
+
+			.marathon__statistics {
+				flex-direction: column;
+
+				.marathon__title-cost {
+					width: 100%;
+					font-family: $font500;
+					font-size: 1rem;
+					line-height: 1.5625rem;
+					margin-bottom: 9rem;
+				}
+
+				.marathon__img {
+					display: block;
+					width: 100%;
+					height: 31.25rem;
+					overflow-x: scroll;
+					margin-bottom: 1.875rem;
+					img{
+						height: 100%;
+					}
+				}
+
+				.marathon__title-country {
+					width: 100%;
+					font-family: $font700;
+					font-size: 1.5625rem;
+					line-height: 2.1875rem;
+					padding-left: 0;
+					padding-right: 1.25rem;
+				}
+			}
+		}
+
+		.marathon__block-8 {
+			height: 52.5rem;
+			padding-top: 3.8125rem;
+			padding-left: 0;
+
+			.marathon__title {
+				padding-left: 1.25rem;
+				font-size: 1.875rem;
+				margin-bottom: 8.375rem;
+			}
+
+			.marathon__img {
+				display: block;
+				width: 100%;
+				height: 31.25rem;
+				overflow-x: scroll;
+				img{
+					height: 100%;
+				}
+			}
+		}
+
+		.marathon__block-9 {
+			height: 34.25rem;
+			padding-top: 1.6875rem;
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
+
+			.marathon__title {
+				margin-bottom: 2rem;
+			}
+
+			.marathon__subtitle {
+				ul {
+					padding-left: 0;
+
+					li {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 599px) {
+	html {
+		font-size:16px;
+	}
+
+	.container {
+		width: 375px;
+		margin: 0 auto;
+	}
+}
