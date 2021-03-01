@@ -1,0 +1,84 @@
+.marathon {
+	width: 100%;
+
+	.marathon__wrapper {
+		width: 100%;
+
+		.marathon__block-1 {
+			width: 100%;
+			background: url("../images/cases/marathon/1.jpg");
+			background-size: cover;
+			height: 47.5rem;
+		}
+		.marathon__block-2 {
+			width: 100%;
+			background: url("../images/cases/marathon/2.png");
+			background-size: cover;
+			height: 47.5rem;
+		}
+		.marathon__block-3 {
+			width: 100%;
+			background: url("../images/cases/marathon/3.png");
+			background-size: cover;
+			height: 47.5rem;
+		}
+		.marathon__block-4 {
+			width: 100%;
+			background: url("../images/cases/marathon/4.png");
+			background-size: cover;
+			height: 47.5rem;
+		}
+		.marathon__block-5 {
+			width: 100%;
+			background: url("../images/cases/marathon/5.png");
+			background-size: cover;
+			height: 47.5rem;
+		}
+		.marathon__block-6 {
+			width: 100%;
+			background: url("../images/cases/marathon/6.png");
+			background-size: cover;
+			height: 47.5rem;
+		}
+		.marathon__block-7 {
+			width: 100%;
+			background: url("../images/cases/marathon/7.png");
+			background-size: cover;
+			height: 47.5rem;
+		}
+		.marathon__block-8 {
+			width: 100%;
+			background: url("../images/cases/marathon/8.png");
+			background-size: cover;
+			height: 47.5rem;
+		}
+		.marathon__block-9 {
+			width: 100%;
+			background: url("../images/cases/marathon/9.png");
+			background-size: cover;
+			height: 47.5rem;
+		}
+	}
+}
+
+@media screen and (max-width: 781px) {
+
+	.marathon__block-1,
+	.marathon__block-2,
+	.marathon__block-3,
+	.marathon__block-4,
+	.marathon__block-5,
+	.marathon__block-6,
+	.marathon__block-7,
+	.marathon__block-8,
+	.marathon__block-9{
+		background: none !important;
+		height: 0 !important;
+	}
+
+	.marathon__wrapper {
+		background: url('../images/cases/marathon/mobile.png');
+		height: 294rem;
+		background-size: cover;
+	}
+}

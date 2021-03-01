@@ -1,33 +1,3 @@
-@import "../fonts/fonts.scss";
-
-$font100: 'Museo Sans Cyrl 100';
-$font300: 'Museo Sans Cyrl 300';
-$font500: 'Museo Sans Cyrl 500';
-$font700: 'Museo Sans Cyrl 700';
-$font900: 'Museo Sans Cyrl 900';
-
-
-
-.snab__title {
-	font-family: $font700;
-	font-size: 2.666rem;
-	line-height: 4rem;
-	color: #fff;
-}
-
-
-.snab__subtitle {
-	font-family: $font300;
-	font-size: 2rem;
-	line-height: 3.333rem;
-	color: #fff;
-
-	ul {
-		list-style: none;
-	}
-}
-
-
 .snab {
 	width: 100%;
 
@@ -36,158 +6,38 @@ $font900: 'Museo Sans Cyrl 900';
 
 		.snab__block-1 {
 			width: 100%;
-			height: 60.571rem;
-			background: url("../images/dest/snab/11.png");
-			background-size: contain;
-			box-sizing: border-box;
-			padding-top: 28.19rem;
-			padding-left: 4.761rem;
-
-			.snab__title {
-				font-size: 3.523rem;
-				text-transform: uppercase;
-				text-align: center;
-				padding: 0 10.952rem;
-				margin-bottom: 9.523rem;
-			}
-
-			.snab__subtitle {
-				font-size: 1.904rem;
-				text-align: center;
-				line-height: 2.285rem;
-			}
+			background: url("../images/cases/snab/1.png");
+			background-size: cover;
+			height: 47.5rem;
 		}
 
 		.snab__block-2 {
 			width: 100%;
-			height: 60.571rem;
-			background: url("../images/dest/snab/22.png");
-			background-size: contain;
-			box-sizing: border-box;
-			padding-top: 10.952rem;
-			padding-left: 5.714rem;
-
-			.snab__title {
-				margin-bottom: .333rem;
-
-			}
-
-			.snab__subtitle {
-				margin-bottom: 3.142rem;
-
-				ul {}
-			}
+			background: url("../images/cases/snab/2.png");
+			background-size: cover;
+			height: 47.5rem;
 		}
 
 		.snab__block-3 {
 			width: 100%;
-			height: 60.571rem;
-			background: url("../images/dest/snab/33.png");
-			background-size: contain;
-			box-sizing: border-box;
-			padding-top: 8.571rem;
-			padding-left: 6.19rem;
-			padding-right: 3.809rem;
-
-			.snab__title {
-				margin-bottom: 0px;
-			}
-
-			.snab__subtitle {
-				margin-bottom: 2.523rem;
-				line-height: 2.809rem;
-
-				ul {}
-			}
+			background: url("../images/cases/snab/3.png");
+			background-size: cover;
+			height: 47.5rem;
 		}
 	}
 }
 
-
 @media screen and (max-width: 781px) {
+	.snab__block-1,
+	.snab__block-2,
+	.snab__block-3 {
+		background: none !important;
+		height: 0 !important;
+	}
 
 	.snab__wrapper {
-		background: url("../images/dest/snab/snab-mobile.png");
-		background-size: contain;
-
-		.snab__block-1,
-		.snab__block-2,
-		.snab__block-3 {
-			background: none !important;
-		}
-	}
-	
-
-	.snab__title {
-		font-size: 22px;
-		line-height: 20px;
-	}
-
-	.snab__subtitle {
-		font-size: 18px;
-		line-height: 22px;
-	}
-
-	.snab {
-		.snab__wrapper {
-			.snab__block-1 {
-				height: 660px;
-				padding-top: 321px;
-				padding-left: 20px;
-				padding-right: 19px;
-
-				.snab__title {
-					font-size: 24px;
-					line-height: 30px;
-					text-align: left;
-					padding: 0;
-					margin-bottom: 55px;
-				}
-
-				.snab__subtitle {
-					font-size: 18px;
-					line-height: 20px;
-					text-align: left;
-
-					p {
-						margin-bottom: 9px;
-					}
-				}
-			}
-
-			.snab__block-2 {
-				height: 410px;
-				padding-top: 34px;
-				padding-left: 20px;
-
-				.snab__title {
-					margin-bottom: 3px;
-				}
-
-				.snab__subtitle {
-					margin-bottom: 20px;
-
-					ul {}
-				}
-			}
-
-			.snab__block-3 {
-				height: 545px;
-				padding-top: 17px;
-				padding-left: 20px;
-				padding-right: 12px;
-
-				.snab__title {
-					margin-bottom: 3px;
-				}
-
-				.snab__subtitle {
-					margin-bottom: 21px;
-					line-height: 22px;
-
-					ul {}
-				}
-			}
-		}
+		background: url('../images/cases/snab/mobile.png');
+		height: 346rem;
+		background-size: cover;
 	}
 }

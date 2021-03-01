@@ -81,3 +81,15 @@
 		width: 745px;
 	}
 }
+
+@media screen and (max-width: 781px){
+	.box-modal {
+		width: 450px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.box-modal {
+		width: 285px;
+	}
+}

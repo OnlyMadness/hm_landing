@@ -11,6 +11,10 @@
 	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
 	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
 	<link rel="stylesheet" href="css/snab.css">
+	<link rel="stylesheet" href="css/fresh.css">
+	<link rel="stylesheet" href="css/tigre.css">
+	<link rel="stylesheet" href="css/bakkon.css">
+	<link rel="stylesheet" href="css/marathon.css">
 	<title>Document</title>
 </head>
 <header>
@@ -23,9 +27,14 @@
 				<a href="" data-scroll="#team" class="nav__link">Команда</a>
 			</div>
 			<button class="burger">
+				<svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+					<path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+					<path class="line middle" d="m 70,50 h -40" />
+					<path class="line bottom" d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+				</svg>
 				<span class="burger__item"></span>
 			</button>
-			<a href="" class="btn btn--black">Связаться</a>
+			<a href="" class="btn btn--black" id="btn--callback">Связаться</a>
 		</div>
 	</div>
 </header>
@@ -218,7 +227,7 @@
 					</ul>
 					<div class="packages__cost">
 						<div class="packages__text">Стоимость: 99 450 рублей</div>
-						<a href="" class="btn btn--yellow">Заказать</a>
+						<a href="" class="btn btn--yellow btn--audit">Заказать</a>
 					</div>
 					<div class="packages__subtext">
 						*анализ проводится в рамках бюджета на Интернет и Тв рекламу<br>
@@ -246,7 +255,7 @@
 					</ul>
 					<div class="packages__cost">
 						<div class="packages__text">Стоимость: 295 500 рублей</div>
-						<a href="" class="btn btn--yellow">Заказать</a>
+						<a href="" class="btn btn--yellow btn--marketing">Заказать</a>
 					</div>
 					<div class="packages__subtext">
 						НДС не предусмотрен. Не публичная оферта.
@@ -276,32 +285,77 @@
 	<div class="cases" id="cases">
 		<div class="container">
 			<div class="cases__slider">
-				<div class="cases__item" style="background: url(images/cases/pioneer/pioner-bg.png) center no-repeat #f1ede5">
+				<!--case snab-->
+				<div class="cases__item" id="item-snab" style="background: url(images/cases/snab/snab-bg.png) center / 55% no-repeat #1b1b1b">
 					<div class="cases__content">
 						<div class="cases__logo">
-							<img src="images/cases/pioneer/pioneer-logo.png" alt="">
+							<img src="images/cases/snab/snab-logo.png" alt="">
 						</div>
-						<div class="cases__text" style="color: #101010;">Тут какой то текст о том как мы работали над проектом, что было сделано и так далее.</div>
-						<a href="" class="cases__link" style="color: #101010;">
+						<div class="cases__text" style="color: #ffffff;">Продвижение компании B2B сектора - доставка запчастей для спецтехники по всему миру.</div>
+						<a href="" class="cases__link" id="snab" style="color: #ffffff;">
 							<svg class="desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="10px">
-								<path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z" />
+								<path fill-rule="evenodd" fill="#ffffff" d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z" />
 							</svg>
 							<svg class="mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="15px">
-								<path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z" />
+								<path fill-rule="evenodd" fill="#ffffff" d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z" />
 							</svg>
 							Открыть кейс</a>
 					</div>
 					<div class="cases__photo">
-						<img src="images/cases/pioneer/pioneer-img.png" alt="">
+						<img src="images/cases/snab/snab-img.png" alt="">
 					</div>
 				</div>
-				<div class="cases__item" style="background: url(images/cases/tigre/pioneer-img.png) center no-repeat #2a2a2c">
+
+				<!--case marathon-->
+				<div class="cases__item" id="item-marathon" style="background: url(images/cases/marathon/marathon-bg.png) center / 65% no-repeat #e27354">
+					<div class="cases__content">
+						<div class="cases__logo">
+							<img src="images/cases/marathon/marathon-logo.png" alt="">
+						</div>
+						<div class="cases__text" style="color: #ffffff;">Международный Владивостокский марафон. Выходи за рамки возможного!</div>
+						<a href="" class="cases__link" id="marathon" style="color: #ffffff;">
+							<svg class="desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="10px">
+								<path fill-rule="evenodd" fill="rgb(225, 225, 0225225)" d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z" />
+							</svg>
+							<svg class="mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="15px">
+								<path fill-rule="evenodd" fill="rgb(225, 225, 225)" d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z" />
+							</svg>
+							Открыть кейс</a>
+					</div>
+					<div class="cases__photo">
+						<img src="images/cases/marathon/marathon-image.png" alt="">
+					</div>
+				</div>
+
+				<!--case fresh-->
+				<div class="cases__item" id="item-fresh" style="background: url(images/cases/fresh/fresh-bg.png) center / 40% no-repeat #2c643e">
+					<div class="cases__content">
+						<div class="cases__logo">
+							<img src="images/cases/fresh/fresh-logo.png" alt="">
+						</div>
+						<div class="cases__text" style="color: #ffffff;">Фреш 25 - выгодно покупать, вкусно выбирать</div>
+						<a href="" class="cases__link" id="fresh" style="color: #ffffff;">
+							<svg class="desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="10px">
+								<path fill-rule="evenodd" fill="rgb(225, 225, 0225225)" d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z" />
+							</svg>
+							<svg class="mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="15px">
+								<path fill-rule="evenodd" fill="rgb(225, 225, 225)" d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z" />
+							</svg>
+							Открыть кейс</a>
+					</div>
+					<div class="cases__photo">
+						<img src="images/cases/fresh/fresh-image.png" alt="">
+					</div>
+				</div>
+
+				<!--case tigre-->
+				<div class="cases__item" id="item-tigre" style="background: url(images/cases/tigre/pioneer-img.png) center / 40% no-repeat #2a2a2c">
 					<div class="cases__content">
 						<div class="cases__logo">
 							<img src="images/cases/tigre/tigre-logo.png" alt="">
 						</div>
 						<div class="cases__text" style="color: #ffffff;">Тут какой то текст о том как мы работали над проектом, что было сделано и так далее.</div>
-						<a href="" class="cases__link" style="color: #ffffff;">
+						<a href="" class="cases__link" id="tigre" style="color: #ffffff;">
 							<svg class="desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="10px">
 								<path fill-rule="evenodd" fill="rgb(225, 225, 0225225)" d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z" />
 							</svg>
@@ -314,6 +368,32 @@
 						<img src="images/cases/tigre/tigre-img.png" alt="">
 					</div>
 				</div>
+
+				<!--case bakkon-->
+				<div class="cases__item" id="item-bakkon" style="background: url(images/cases/bakkon/bakkon-bg.png) center / 50% no-repeat #0a236c">
+					<div class="cases__content">
+						<div class="cases__logo">
+							<img src="images/cases/bakkon/bakkon-logo.png" alt="">
+						</div>
+						<div class="cases__text" style="color: #ffffff; font-size: 1rem">Продвижение в B2B секторе.<br>
+							Ремонт и обслуживание печатной техники:<br>
+							- привлечение бизнеса на сервисные услуги,<br>
+							- развитие on-line направления продаж и ремонта техники.
+						</div>
+						<a href="" class="cases__link" id="bakkon" style="color: #ffffff;">
+							<svg class="desktop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="10px">
+								<path fill-rule="evenodd" fill="rgb(225, 225, 0225225)" d="M8.862,9.372 L7.618,8.137 L10.179,5.593 L0.125,5.593 L0.125,3.875 L10.193,3.875 L7.618,1.318 L8.862,0.083 L13.539,4.727 L8.862,9.372 Z" />
+							</svg>
+							<svg class="mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="15px">
+								<path fill-rule="evenodd" fill="rgb(225, 225, 225)" d="M13.269,14.178 L11.456,12.379 L15.177,8.687 L0.562,8.687 L0.562,6.156 L15.192,6.156 L11.456,2.449 L13.269,0.650 L20.085,7.414 L13.269,14.178 Z" />
+							</svg>
+							Открыть кейс</a>
+					</div>
+					<div class="cases__photo">
+						<img src="images/cases/bakkon/bakkon-image.png" alt="">
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -348,60 +428,151 @@
 	</div>
 
 	<div style="display: none;">
-		<div class="box-modal" id="modal-snab-vostok">
+		<div class="box-modal" id="modal-callback">
 			<div class="box-modal_close arcticmodal-close">X</div>
-			<section class="snab">
-				<div class="snab__wrapper">
-					<div class="snab__block-1">
-						<div class="snab__title">ведение и настройка контекстной рекламы для ООО «Снабжение Восток»</div>
-						<div class="snab__subtitle">
-							<p>Компания ООО «Снабжение Восток» поставляет спецтехнику и запасные части.</p>
-							<p>Обладает складом запасных частей для SHANTUI, ZOOMLION, KOMATSU.</p>
-							<p>География: Россия, русскоязычная аудитория по всему миру. </p>
-						</div>
-					</div>
-					<div class="snab__block-2">
-						<div class="snab__title">Цель:</div>
-						<div class="snab__subtitle">- привести поток лидов из поисковой рекламы в Google и Yandex.</div>
-						<div class="snab__title">Задачи:</div>
-						<div class="snab__subtitle">
-							<ul>
-								<li>- разработка лендинга с учетом потребностей ЦА;</li>
-								<li>- настройка рекламных кампаний, их оптимизация;</li>
-								<li>- оценка рекламы и отчетность по числу лидов с сайта.</li>
-							</ul>
-						</div>
-						<div class="snab__title">Целевая аудитория:</div>
-						<div class="snab__subtitle">Преимущественно мужчины 30+ с руководящей должностью, работающие в строительстве.</div>
-					</div>
-					<div class="snab__block-3">
-						<div class="snab__title">Проблемы:</div>
-						<div class="snab__subtitle">
-							<ul>
-								<li>- высокие ставки на поисковом аукционе, желание конкурентов быть на первой строке;</li>
-								<li>- невозможность встроиться в коммуникацию B2B, большой вклад прямых продаж.</li>
-							</ul>
-						</div>
-						<div class="snab__title">Решение:</div>
-						<div class="snab__subtitle">
-							<ul>
-								<li>- оптимизация ставок на целевое действие, уход от конкуренции за позицию;</li>
-								<li>- ремаркетинговые рекламные кампании в помощь к прямым продажам;</li>
-								<li>- медийные рекламные кампании по аудиториям похожим на тех, кто скачивали прайс.</li>
-							</ul>
-						</div>
-						<div class="snab__title">Неожиданная проблема:</div>
-						<div class="snab__subtitle">
-							<ul>
-								<li>- фрод из Индии, несмотря на ограничение по русскому языку (страна исключена).</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+			<div class="callback">
+				<h2>Оставьте свои данные и я Вам перезвоню</h2>
+				<form action="" class="callback__form">
+					<input type="text" placeholder="Ф.И.О.">
+					<input type="text" class="callback__phone" placeholder="Телефон">
+					<input type="text" class="callback__email" placeholder="Почта">
+					<button class="btn btn--violet">Заказать звонок</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div style="display: none;">
+		<div class="box-modal" id="modal-experience">
+			<div class="box-modal_close arcticmodal-close">X</div>
+			<div class="callback">
+				<h2>Оставьте свои данные и я Вам перезвоню</h2>
+				<form action="" class="callback__form">
+					<input type="text" placeholder="Ф.И.О.">
+					<input type="text" class="callback__phone" placeholder="Телефон">
+					<input type="text" class="callback__email" placeholder="Почта">
+					<button class="btn btn--violet">Заказать звонок</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div style="display: none;">
+		<div class="box-modal" id="modal-audit">
+			<div class="box-modal_close arcticmodal-close">X</div>
+			<div class="callback">
+				<h2>Заказать аудит за 99 450 рублей</h2>
+				<form action="" class="callback__form">
+					<input type="text" placeholder="Ф.И.О.">
+					<input type="text" class="callback__phone" placeholder="Телефон">
+					<input type="text" class="callback__email" placeholder="Почта">
+					<button class="btn btn--violet">Заказать звонок</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div style="display: none;">
+		<div class="box-modal" id="modal-marketing">
+			<div class="box-modal_close arcticmodal-close">X</div>
+			<div class="callback">
+				<h2>Заказать комплексный маркетинг за <span>295 000</span> рублей</h2>
+				<form action="" class="callback__form">
+					<input type="text" placeholder="Ф.И.О.">
+					<input type="text" class="callback__phone" placeholder="Телефон">
+					<input type="text" class="callback__email" placeholder="Почта">
+					<button class="btn btn--violet">Заказать звонок</button>
+				</form>
+			</div>
 		</div>
 	</div>
 
+	<div style="display: none;">
+		<div class="box-modal" id="modal-fresh">
+			<div class="box-modal_close arcticmodal-close">X</div>
+			<div class="fresh">
+				<div class="fresh__wrapper">
+					<div class="fresh__block-1"></div>
+					<div class="fresh__block-2"></div>
+					<div class="fresh__block-3"></div>
+					<div class="fresh__block-4"></div>
+					<div class="fresh__block-5"></div>
+					<div class="fresh__block-6"></div>
+					<div class="fresh__block-7"></div>
+					<div class="fresh__block-8"></div>
+					<div class="fresh__block-9"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div style="display: none;">
+		<div class="box-modal" id="modal-tigre">
+			<div class="box-modal_close arcticmodal-close">X</div>
+			<div class="tigre">
+				<div class="tigre__wrapper">
+					<div class="tigre__block-1"></div>
+					<div class="tigre__block-2"></div>
+					<div class="tigre__block-3"></div>
+					<div class="tigre__block-4"></div>
+					<div class="tigre__block-5"></div>
+					<div class="tigre__block-6"></div>
+					<div class="tigre__block-7"></div>
+					<div class="tigre__block-8"></div>
+					<div class="tigre__block-9"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="display: none;">
+		<div class="box-modal" id="modal-bakkon">
+			<div class="box-modal_close arcticmodal-close">X</div>
+			<div class="bakkon">
+				<div class="bakkon__wrapper">
+					<div class="bakkon__block-1"></div>
+					<div class="bakkon__block-2"></div>
+					<div class="bakkon__block-3"></div>
+					<div class="bakkon__block-4"></div>
+					<div class="bakkon__block-5"></div>
+					<div class="bakkon__block-6"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="display: none;">
+		<div class="box-modal" id="modal-marathon">
+			<div class="box-modal_close arcticmodal-close">X</div>
+			<div class="marathon">
+				<div class="marathon__wrapper">
+					<div class="marathon__block-1"></div>
+					<div class="marathon__block-2"></div>
+					<div class="marathon__block-3"></div>
+					<div class="marathon__block-4"></div>
+					<div class="marathon__block-5"></div>
+					<div class="marathon__block-6"></div>
+					<div class="marathon__block-7"></div>
+					<div class="marathon__block-8"></div>
+					<div class="marathon__block-9"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="display: none;">
+		<div class="box-modal" id="modal-snab">
+			<div class="box-modal_close arcticmodal-close">X</div>
+			<div class="snab">
+				<div class="snab__wrapper">
+					<div class="snab__block-1"></div>
+					<div class="snab__block-2"></div>
+					<div class="snab__block-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer>
 		<div class="container">
