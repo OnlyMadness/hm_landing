@@ -6,37 +6,37 @@
 }
 .bakkon .bakkon__wrapper .bakkon__block-1 {
   width: 100%;
-  background: url("../images/cases/bakkon/1.png");
+  background: url("../images/cases/bakkon/1.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .bakkon .bakkon__wrapper .bakkon__block-2 {
   width: 100%;
-  background: url("../images/cases/bakkon/2.png");
+  background: url("../images/cases/bakkon/2.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .bakkon .bakkon__wrapper .bakkon__block-3 {
   width: 100%;
-  background: url("../images/cases/bakkon/3.png");
+  background: url("../images/cases/bakkon/3.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .bakkon .bakkon__wrapper .bakkon__block-4 {
   width: 100%;
-  background: url("../images/cases/bakkon/4.png");
+  background: url("../images/cases/bakkon/4.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .bakkon .bakkon__wrapper .bakkon__block-5 {
   width: 100%;
-  background: url("../images/cases/bakkon/5.png");
+  background: url("../images/cases/bakkon/5.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .bakkon .bakkon__wrapper .bakkon__block-6 {
   width: 100%;
-  background: url("../images/cases/bakkon/6.png");
+  background: url("../images/cases/bakkon/6.jpg");
   background-size: cover;
   height: 47.5rem;
 }
@@ -53,8 +53,8 @@
   }
 
   .bakkon__wrapper {
-    background: url("../images/cases/bakkon/mobile.png");
-    height: 346rem;
+    background: url("../images/cases/bakkon/mobile.jpg");
+    height: 294rem;
     background-size: cover;
   }
 }

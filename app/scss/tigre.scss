@@ -6,119 +6,146 @@
 
 		.tigre__block-1 {
 			width: 100%;
-			background: url("../images/cases/tigre/1.png");
+			background: url("../images/cases/tigre/1.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-2 {
 			width: 100%;
-			background: url("../images/cases/tigre/2.png");
+			background: url("../images/cases/tigre/2.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-3 {
 			width: 100%;
-			background: url("../images/cases/tigre/3.png");
+			background: url("../images/cases/tigre/3.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-4 {
 			width: 100%;
-			background: url("../images/cases/tigre/4.png");
+			background: url("../images/cases/tigre/4.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-5 {
 			width: 100%;
-			background: url("../images/cases/tigre/5.png");
+			background: url("../images/cases/tigre/5.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-6 {
 			width: 100%;
-			background: url("../images/cases/tigre/6.png");
+			background: url("../images/cases/tigre/6.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-7 {
 			width: 100%;
-			background: url("../images/cases/tigre/7.png");
+			background: url("../images/cases/tigre/7.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-8 {
 			width: 100%;
-			background: url("../images/cases/tigre/8.png");
+			background: url("../images/cases/tigre/8.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-9 {
 			width: 100%;
-			background: url("../images/cases/tigre/9.png");
+			background: url("../images/cases/tigre/9.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-10 {
 			width: 100%;
-			background: url("../images/cases/tigre/10.png");
+			background: url("../images/cases/tigre/10.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-11 {
 			width: 100%;
-			background: url("../images/cases/tigre/11.png");
+			background: url("../images/cases/tigre/11.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-12 {
 			width: 100%;
-			background: url("../images/cases/tigre/12.png");
+			background: url("../images/cases/tigre/12.jpg");
 			background-size: contain;
 			height: 47.5rem;
 		}
 
 		.tigre__block-13 {
 			width: 100%;
-			background: url("../images/cases/tigre/13.png");
+			background: url("../images/cases/tigre/13.jpg");
 			background-size: contain;
 			height: 47.5rem;
+		}
+		.tigre__map,
+		.tigre__social{
+			display: none;
 		}
 	}
 }
 
 @media screen and (max-width: 781px) {
+	.tigre {
+		.tigre__wrapper {
+			background: url('../images/cases/tigre/mobile.jpg');
+			height: 658rem;
+			background-size: cover;
 
-	.tigre__block-1,
-	.tigre__block-2,
-	.tigre__block-3,
-	.tigre__block-4,
-	.tigre__block-5,
-	.tigre__block-6,
-	.tigre__block-7,
-	.tigre__block-8,
-	.tigre__block-9,
-	.tigre__block-10,
-	.tigre__block-11,
-	.tigre__block-12,
-	.tigre__block-13 {
-		background: none !important;
-		height: 0 !important;
-	}
-
-	.tigre__wrapper {
-		background: url('../images/cases/tigre/mobile.png');
-		height: 658rem;
-		background-size: cover;
+			.tigre__block-1,
+			.tigre__block-2,
+			.tigre__block-3,
+			.tigre__block-4,
+			.tigre__block-5,
+			.tigre__block-6,
+			.tigre__block-7,
+			.tigre__block-8,
+			.tigre__block-9,
+			.tigre__block-10,
+			.tigre__block-11,
+			.tigre__block-12,
+			.tigre__block-13 {
+				background: none;
+				height: 0;
+			}
+			.tigre__map{
+				display: block;
+				width: 100%;
+				height: 16rem;
+				overflow-x: scroll;
+				padding-top: 281rem;
+				img{
+					height: 95%;	
+				}
+			}
+			.tigre__social{
+				display: block;
+				width: 94%;
+				height: 15rem;
+				overflow-x: scroll;
+				padding-top: 228rem;
+				padding-left: 1rem;
+				img{
+					height: 95%;	
+				}
+			}
+			
+		}
 	}
 }

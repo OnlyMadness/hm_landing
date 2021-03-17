@@ -57,50 +57,50 @@ $(function () {
 		$('#modal-fresh').arcticmodal();
 	});
 
-	$("#item-fresh").on("click", function (event) {
+/*	$("#item-fresh").on("click", function (event) {
 		event.preventDefault();
 		$('#modal-fresh').arcticmodal();
-	});
+	});*/
 
 	$("#tigre").on("click", function (event) {
 		event.preventDefault();
 		$('#modal-tigre').arcticmodal();
 	});
 
-	$("#item-tigre").on("click", function (event) {
+/*	$("#item-tigre").on("click", function (event) {
 		event.preventDefault();
 		$('#modal-tigre').arcticmodal();
-	});
+	});*/
 
 	$("#bakkon").on("click", function (event) {
 		event.preventDefault();
 		$('#modal-bakkon').arcticmodal();
 	});
 
-	$("#item-bakkon").on("click", function (event) {
+/*	$("#item-bakkon").on("click", function (event) {
 		event.preventDefault();
 		$('#modal-bakkon').arcticmodal();
-	});
+	});*/
 
 	$("#marathon").on("click", function (event) {
 		event.preventDefault();
 		$('#modal-marathon').arcticmodal();
 	});
 
-	$("#item-marathon").on("click", function (event) {
+/*	$("#item-marathon").on("click", function (event) {
 		event.preventDefault();
 		$('#modal-marathon').arcticmodal();
-	});
+	});*/
 
 	$("#snab").on("click", function (event) {
 		event.preventDefault();
 		$('#modal-snab').arcticmodal();
 	});
 
-	$("#item-snab").on("click", function (event) {
+/*	$("#item-snab").on("click", function (event) {
 		event.preventDefault();
 		$('#modal-snab').arcticmodal();
-	});
+	});*/
 
 
 
@@ -123,7 +123,22 @@ $(function () {
 		event.preventDefault();
 		$('#modal-marketing').arcticmodal();
 	});
+	
+	$(".footer__link").on("click", function (event) {
+		event.preventDefault();
+		$('#modal-callback').arcticmodal();
+	});
+	
+	$(".packages__audit").on("click", function (event) {
+		event.preventDefault();
+		$('#modal-packages-audit').arcticmodal();
+	});
+	$(".packages__marketing").on("click", function (event) {
+		event.preventDefault();
+		$('#modal-packages-marketing').arcticmodal();
+	});
 
+	
 
 });
 

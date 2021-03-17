@@ -12,70 +12,93 @@
 }
 .marathon .marathon__wrapper .marathon__block-2 {
   width: 100%;
-  background: url("../images/cases/marathon/2.png");
+  background: url("../images/cases/marathon/2.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .marathon .marathon__wrapper .marathon__block-3 {
   width: 100%;
-  background: url("../images/cases/marathon/3.png");
+  background: url("../images/cases/marathon/3.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .marathon .marathon__wrapper .marathon__block-4 {
   width: 100%;
-  background: url("../images/cases/marathon/4.png");
+  background: url("../images/cases/marathon/4.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .marathon .marathon__wrapper .marathon__block-5 {
   width: 100%;
-  background: url("../images/cases/marathon/5.png");
+  background: url("../images/cases/marathon/5.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .marathon .marathon__wrapper .marathon__block-6 {
   width: 100%;
-  background: url("../images/cases/marathon/6.png");
+  background: url("../images/cases/marathon/6.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .marathon .marathon__wrapper .marathon__block-7 {
   width: 100%;
-  background: url("../images/cases/marathon/7.png");
+  background: url("../images/cases/marathon/7.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .marathon .marathon__wrapper .marathon__block-8 {
   width: 100%;
-  background: url("../images/cases/marathon/8.png");
+  background: url("../images/cases/marathon/8.jpg");
   background-size: cover;
   height: 47.5rem;
 }
 .marathon .marathon__wrapper .marathon__block-9 {
   width: 100%;
-  background: url("../images/cases/marathon/9.png");
+  background: url("../images/cases/marathon/9.jpg");
   background-size: cover;
   height: 47.5rem;
 }
+.marathon .marathon__wrapper .marathon__graph,
+.marathon .marathon__wrapper .marathon__table {
+  display: none;
+}
 
 @media screen and (max-width: 781px) {
-  .marathon__block-1,
-.marathon__block-2,
-.marathon__block-3,
-.marathon__block-4,
-.marathon__block-5,
-.marathon__block-6,
-.marathon__block-7,
-.marathon__block-8,
-.marathon__block-9 {
-    background: none !important;
-    height: 0 !important;
-  }
-
-  .marathon__wrapper {
-    background: url("../images/cases/marathon/mobile.png");
-    height: 294rem;
+  .marathon .marathon__wrapper {
+    background: url("../images/cases/marathon/mobile.jpg");
+    height: 350rem;
     background-size: cover;
+  }
+  .marathon .marathon__wrapper .marathon__block-1,
+.marathon .marathon__wrapper .marathon__block-2,
+.marathon .marathon__wrapper .marathon__block-3,
+.marathon .marathon__wrapper .marathon__block-4,
+.marathon .marathon__wrapper .marathon__block-5,
+.marathon .marathon__wrapper .marathon__block-6,
+.marathon .marathon__wrapper .marathon__block-7,
+.marathon .marathon__wrapper .marathon__block-8,
+.marathon .marathon__wrapper .marathon__block-9 {
+    background: none;
+    height: 0;
+  }
+  .marathon .marathon__wrapper .marathon__graph {
+    display: block;
+    width: 100%;
+    height: 24rem;
+    overflow-x: scroll;
+    padding-top: 231rem;
+  }
+  .marathon .marathon__wrapper .marathon__graph img {
+    height: 95%;
+  }
+  .marathon .marathon__wrapper .marathon__table {
+    display: block;
+    width: 100%;
+    height: 23rem;
+    overflow-x: scroll;
+    padding-top: 44rem;
+  }
+  .marathon .marathon__wrapper .marathon__table img {
+    height: 95%;
   }
 }

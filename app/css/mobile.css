@@ -81,7 +81,6 @@ h2 {
     top: 0.75rem;
     left: 0.75rem;
   }
-
   .btn--violet--underline {
     font-size: 1.25rem;
     padding: 1.25rem 2.75rem;
@@ -100,13 +99,14 @@ h2 {
   }
 
   .btn--yellow {
+    width: 100%;
     font-family: "Museo Sans Cyrl 500";
-    font-size: 1.625rem;
+    font-size: 1.437rem;
     background-color: #ffde02;
-    padding: 0.437rem 3.125rem;
-    border: 0.062rem solid #ebebeb;
+    padding: 0.625rem 0;
     margin: 0 auto;
-    border: 0.125rem solid #ebebeb;
+    border: 0;
+    text-align: center;
   }
 
   header {
@@ -190,6 +190,67 @@ h2 {
     		background-color: #000;
     	}
     }*/
+  }
+  header .header__wrapper .contact .contact__wrapper {
+    width: 20rem;
+    right: auto;
+    left: -0.625rem;
+    top: 2.375rem;
+    padding-left: 1.562rem;
+    padding-top: 1.75rem;
+    padding-bottom: 1.625rem;
+  }
+  header .header__wrapper .contact .contact__wrapper::before {
+    position: absolute;
+    top: -29px;
+    right: auto;
+    left: 44px;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__phone,
+header .header__wrapper .contact .contact__wrapper .contact__email {
+    margin-bottom: 0.187rem;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__phone .contact__text,
+header .header__wrapper .contact .contact__wrapper .contact__email .contact__text {
+    font-size: 0.75rem;
+    margin-right: 0.312rem;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__phone a,
+header .header__wrapper .contact .contact__wrapper .contact__email a {
+    font-size: 14px;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__address {
+    font-size: 0.875rem;
+    margin-bottom: 0.812rem;
+    letter-spacing: 0.02rem;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__social .contact__instagram {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.812rem;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__social .contact__instagram svg {
+    height: 0.875rem;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__social .contact__facebook {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.687rem;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__social .contact__facebook svg {
+    height: 1rem;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__social .contact__whatsapp {
+    width: 10.187rem;
+    height: 2rem;
+    padding-left: 0.625rem;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__social .contact__whatsapp svg {
+    height: 1.375rem;
+    margin-right: 0.75rem;
+  }
+  header .header__wrapper .contact .contact__wrapper .contact__social .contact__whatsapp .contact__text {
+    font-size: 0.625rem;
   }
 
   .intro {
@@ -277,7 +338,7 @@ h2 {
   }
 
   .experience {
-    background-image: url(../images/experience-mobile.png.jpg);
+    background-image: url(../images/experience-mobile.jpg);
     padding-top: 4.875rem;
     height: 51.812rem;
     box-sizing: border-box;
@@ -442,29 +503,36 @@ h2 {
     height: auto;
   }
   .packages .packages__wrapper {
-    overflow-y: scroll;
+    flex-direction: column;
   }
   .packages .packages__wrapper .packages__item {
     width: 100%;
+    padding: 0.812rem;
+    box-sizing: border-box;
+    border: 2px solid #6742e1;
+    background-color: #ededed;
+    margin-bottom: 2.312rem;
+  }
+  .packages .packages__wrapper .packages__item ul {
+    display: none;
   }
   .packages .packages__wrapper .packages__item .packages__title {
-    font-size: 1.25rem;
-    min-height: 3.75rem;
+    font-size: 1.125rem;
+    min-height: 3.437rem;
     padding-left: 0.75rem;
   }
-  .packages .packages__wrapper .packages__item ul li {
-    font-size: 1rem;
-    line-height: 1.25rem;
-    min-height: 2.687rem;
-    padding-left: 0.75rem;
-    padding-right: 1.25rem;
-  }
-  .packages .packages__wrapper .packages__item ul li br {
+  .packages .packages__wrapper .packages__item .packages__view {
     display: block;
+    font-family: "Museo Sans Cyrl 500";
+    font-size: 1.125rem;
+    border: 2px solid #6742e1;
+    margin: 0.562rem 0;
+    text-align: center;
+    padding: 11px 0;
   }
   .packages .packages__wrapper .packages__item .packages__cost {
     display: flex;
-    width: 20rem;
+    width: 100%;
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
@@ -473,14 +541,13 @@ h2 {
     padding-left: 0;
     padding-right: 0;
     border: 0;
-    border-top: 0.062rem solid #ebebeb;
-    margin-bottom: 0.625rem;
+    margin-bottom: 0;
   }
   .packages .packages__wrapper .packages__item .packages__cost .packages__text {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.937rem;
     background-color: #6742e1;
-    min-height: 3.125rem;
+    min-height: 3rem;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -488,7 +555,7 @@ h2 {
     align-items: center;
     padding-left: 0.625rem;
     box-sizing: border-box;
-    margin-bottom: 0.937rem;
+    margin-bottom: 0;
   }
   .packages .packages__wrapper .packages__item .packages__subtext {
     display: none;
@@ -717,6 +784,30 @@ h2 {
     width: 100%;
     font-size: 1.062rem;
     height: 3.312rem;
+  }
+
+  .box-modal .marketing ul,
+.box-modal .audit ul {
+    border: 1px solid #ebebeb;
+  }
+  .box-modal .marketing ul li,
+.box-modal .audit ul li {
+    font-family: "Museo Sans Cyrl 300";
+    list-style: none;
+    background-color: #fcfcfc;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    min-height: 2.75rem;
+    border: 1px solid #ebebeb;
+    color: #121212;
+    font-size: 0.937rem;
+    line-height: 1.25rem;
+    min-height: 3rem;
+    padding-left: 0.75rem;
+    padding-right: 1.25rem;
   }
 }
 @media screen and (max-width: 500px) {

@@ -117,13 +117,14 @@
 	}
 
 	.btn--yellow {
+		width: 100%;
 		font-family: $font500;
-		font-size: 1.625rem;
+		font-size: 1.437rem;
 		background-color: #ffde02;
-		padding: .437rem 3.125rem;
-		border: .062rem solid #ebebeb;
+		padding: .625rem 0;
 		margin: 0 auto;
-		border: .125rem solid #ebebeb;
+		border: 0;
+		text-align: center;
 	}
 
 	header {
@@ -215,6 +216,76 @@
 					}
 				}*/
 			}
+
+			.contact {
+				.contact__wrapper {
+					width: 20rem;
+					right: auto;
+					left: -.625rem;
+					top: 2.375rem;
+					padding-left: 1.562rem;
+					padding-top: 1.75rem;
+					padding-bottom: 1.625rem;
+					&::before {
+						position: absolute;
+						top: -29px;
+						right: auto;
+						left: 44px;
+					}
+
+					.contact__phone,
+					.contact__email {
+						margin-bottom: .187rem;
+						.contact__text {
+							font-size: .75rem;
+							margin-right: .312rem;
+						}
+						a {
+							font-size: 14px;
+						}
+					}
+					.contact__address {
+						font-size: .875rem;
+						margin-bottom: .812rem;
+						letter-spacing: 0.02rem;
+					}
+					.contact__social {
+						.contact__instagram {
+							width: 2rem;
+							height: 2rem;
+							margin-right: .812rem;
+							svg {
+								height: .875rem;
+							}
+						}
+
+						.contact__facebook {
+							width: 2rem;
+							height: 2rem;
+							margin-right: .687rem;
+							svg {
+								height: 1rem;
+							}
+						}
+						.contact__whatsapp {
+							width: 10.187rem;
+							height: 2rem;
+							padding-left: .625rem;
+
+							svg {
+								height: 1.375rem;
+								margin-right: .75rem;
+							}
+
+							.contact__text {
+								font-size: .625rem;
+							}
+						}
+					}
+				}
+			}
+
+
 		}
 	}
 
@@ -318,7 +389,7 @@
 	}
 
 	.experience {
-		background-image: url(../images/experience-mobile.png.jpg);
+		background-image: url(../images/experience-mobile.jpg);
 		padding-top: 4.875rem;
 		height: 51.812rem;
 		box-sizing: border-box;
@@ -517,36 +588,41 @@
 		}
 
 		.packages__wrapper {
-			overflow-y: scroll;
+			flex-direction: column;
 
 			.packages__item {
 				width: 100%;
+				padding: .812rem;
+				box-sizing: border-box;
+				border: 2px solid #6742e1;
+				background-color: #ededed;
+				margin-bottom: 2.312rem;
+
+				ul {
+					display: none;
+				}
 
 				.packages__title {
-					font-size: 1.25rem;
-					min-height: 3.75rem;
+					font-size: 1.125rem;
+					min-height: 3.437rem;
 					padding-left: .75rem;
 				}
 
-				ul {
-					li {
-						font-size: 1rem;
-						line-height: 1.25rem;
-						min-height: 2.687rem;
-						padding-left: .75rem;
-						padding-right: 1.25rem;
-
-						br {
-							display: block;
-						}
-
-						&:last-child {}
-					}
+				.packages__view {
+					display: block;
+					font-family: $font500;
+					font-size: 1.125rem;
+					border: 2px solid #6742e1;
+					margin: .562rem 0;
+					text-align: center;
+					padding: 11px 0;
 				}
+
+
 
 				.packages__cost {
 					display: flex;
-					width: 20rem;
+					width: 100%;
 					flex-direction: column;
 					align-items: baseline;
 					justify-content: space-between;
@@ -555,14 +631,13 @@
 					padding-left: 0;
 					padding-right: 0;
 					border: 0;
-					border-top: .062rem solid #ebebeb;
-					margin-bottom: .625rem;
+					margin-bottom: 0;
 
 					.packages__text {
 						width: 100%;
-						font-size: 1rem;
+						font-size: .937rem;
 						background-color: #6742e1;
-						min-height: 3.125rem;
+						min-height: 3rem;
 						display: -webkit-flex;
 						display: -moz-flex;
 						display: -ms-flex;
@@ -571,7 +646,7 @@
 						align-items: center;
 						padding-left: .625rem;
 						box-sizing: border-box;
-						margin-bottom: .937rem;
+						margin-bottom: 0;
 					}
 				}
 
@@ -811,6 +886,8 @@
 		}
 	}
 
+
+
 	.callback {
 		padding-top: 1.937rem;
 		padding-bottom: 2.187rem;
@@ -842,6 +919,40 @@
 			}
 		}
 	}
+
+	.box-modal {
+
+		.marketing,
+		.audit {
+			ul {
+				border: 1px solid #ebebeb;
+
+				li {
+					font-family: $font300;
+					list-style: none;
+					background-color: #fcfcfc;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					align-items: center;
+					min-height: 2.75rem;
+					border: 1px solid #ebebeb;
+					color: #121212;
+					font-size: .937rem;
+					line-height: 1.25rem;
+					min-height: 3rem;
+					padding-left: .75rem;
+					padding-right: 1.25rem;
+				}
+			}
+		}
+	}
+
+
+
+
 }
 
 @media screen and (max-width: 500px) {
